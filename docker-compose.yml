@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  lego-parts-guide:
+    build: .
+    container_name: lego-parts-guide
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # 持久化數據目錄，這樣數據不會在容器重啟後丟失
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+    # 可選：設定日誌限制
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂高零件分類挑戰</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>樂高零件分類挑戰</h1>
+        <div class="subtitle">測試你的零件知識！</div>
+        <a href="index.html" class="back-link">← 回到圖鑑</a>
+    </header>
+
+    <main class="game-container">
+        <div class="game-stats">
+            <div class="stat-box">得分: <span id="score">0</span></div>
+            <div class="stat-box">題數: <span id="round">1</span>/10</div>
+        </div>
+
+        <div id="game-area">
+            <div class="part-display">
+                <div id="part-image-container">
+                    <!-- Image injected here -->
+                </div>
+                <h2 id="part-name">Loading...</h2>
+                <p id="part-id-display">ID: ...</p>
+            </div>
+
+            <div class="options-grid" id="options-grid">
+                <!-- Category buttons injected here -->
+            </div>
+
+            <div id="feedback" class="feedback-msg"></div>
+            <button id="next-btn" class="primary-btn" style="display: none;">下一題</button>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content text-center">
+                <h2>遊戲結束!</h2>
+                <p class="final-score">你的得分: <span id="final-score">0</span> / 100</p>
+                <p id="final-message"></p>
+                <button id="restart-btn" class="primary-btn">再玩一次</button>
+                <br><br>
+                <a href="index.html" class="secondary-btn">回到首頁</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+.game-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+}
+
+.part-display {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+}
+
+#part-image-container img {
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+#part-name {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+#part-id-display {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.option-btn {
+    background: white;
+    border: 2px solid var(--card-border);
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-color);
+}
+
+.option-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+}
+
+.option-btn.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.option-btn.wrong {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.feedback-msg {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+.feedback-msg.correct {
+    color: #28a745;
+}
+
+.feedback-msg.wrong {
+    color: #dc3545;
+}
+
+#next-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.8rem 3rem;
+    font-size: 1.1rem;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.final-score {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Modal styles reused from admin.css but simplified */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

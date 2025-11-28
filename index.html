@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂高機械零件分類教學圖鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Override font for Traditional Chinese support */
+        :root {
+            --font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+        }
+
+        .search-container {
+            margin: 2rem auto 1rem;
+            max-width: 600px;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--card-border);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: var(--glass-shadow);
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        #search-input:focus {
+            border-color: var(--accent-color);
+            transform: scale(1.02);
+        }
+
+        /* Category Navigation */
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid var(--card-border);
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-color);
+            transition: all 0.2s ease;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 10px rgba(0, 85, 191, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>樂高機械零件分類教學圖鑑</h1>
+        <div class="subtitle">STEM 教學、機器人社團、零件庫存管理指南</div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="搜尋零件名稱或 ID...">
+        </div>
+
+        <div id="category-nav" class="category-nav">
+            <!-- Buttons will be injected here -->
+        </div>
+
+        <div id="app-container">
+            <!-- Content will be injected here by script.js -->
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="game.html" class="primary-btn"
+            style="text-decoration: none; display: inline-block; margin-bottom: 1rem;">🎮 挑戰零件分類遊戲</a>
+        <br>
+        <a href="admin.html" style="color: var(--accent-color); text-decoration: none; font-size: 0.9rem;">管理員登入</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

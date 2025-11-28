@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>零件管理系統 - 樂高機械零件圖鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>零件管理系統</h1>
+        <div class="subtitle">新增、編輯與管理零件資料庫</div>
+        <button id="logout-btn" style="display: none;">登出</button>
+    </header>
+
+    <main>
+        <!-- Login Section -->
+        <div id="login-section" class="admin-container">
+            <h2>管理員登入</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">帳號</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="primary-btn">登入</button>
+                <p id="login-error" class="error-msg"></p>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" class="admin-container" style="display: none;">
+            <div class="dashboard-controls">
+                <button id="save-all-btn" class="success-btn">儲存所有變更</button>
+                <a href="index.html" target="_blank" class="secondary-btn">查看前台</a>
+            </div>
+
+            <div id="admin-content">
+                <!-- Categories and parts will be rendered here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Edit/Add Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">編輯零件</h2>
+            <form id="edit-form">
+                <input type="hidden" id="edit-category-id">
+                <input type="hidden" id="edit-subcategory-index">
+                <input type="hidden" id="edit-part-index"> <!-- -1 for new part -->
+
+                <div class="form-group">
+                    <label for="part-id">零件 ID</label>
+                    <input type="text" id="part-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="part-name">名稱</label>
+                    <input type="text" id="part-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="part-visual">外觀描述</label>
+                    <input type="text" id="part-visual">
+                </div>
+                <div class="form-group">
+                    <label for="part-color">顏色 ID (BrickLink)</label>
+                    <input type="number" id="part-color" value="86">
+                    <small>常見: 11(黑), 86(淺灰), 85(深灰), 5(紅), 2(米), 3(黃), 7(藍)</small>
+                </div>
+                <div class="form-group">
+                    <label for="part-element">Element ID (選填)</label>
+                    <input type="text" id="part-element" placeholder="用於特殊零件圖片">
+                </div>
+
+                <div class="form-group">
+                    <label for="part-custom-image">自訂圖片連結 (選填)</label>
+                    <input type="text" id="part-custom-image" placeholder="輸入圖片網址 (https://...)">
+                </div>
+
+                <div class="modal-actions">
+                    <button type="submit" class="primary-btn">確認</button>
+                    <button type="button" id="delete-part-btn" class="danger-btn">刪除零件</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        window.onerror = function (msg, url, line, col, error) {
+            alert('System Error: ' + msg);
+            return false;
+        };
+
+        // Stub to catch early clicks
+        if (!window.openEditModal) {
+            window.openEditModal = function () {
+                alert('系統正在載入中，請稍候...');
+            };
+        }
+    </script>
+    <script src="admin.js?v=9"></script>
+</body>
+
+</html>

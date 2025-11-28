@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修復測試 - LEGO Parts Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .status {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .test-section {
+            margin: 30px 0;
+        }
+
+        .test-section h2 {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .image-card {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            background: white;
+            border-radius: 5px;
+        }
+
+        .image-card p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .links a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin: 5px;
+            transition: transform 0.2s;
+        }
+
+        .links a:hover {
+            transform: translateY(-2px);
+        }
+
+        .info {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info strong {
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ 錯誤修復完成</h1>
+        
+        <div class="status">
+            所有 via.placeholder.com 依賴已移除！
+        </div>
+
+        <div class="info">
+            <strong>修復內容：</strong>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>✓ 移除外部 via.placeholder.com 依賴</li>
+                <li>✓ 使用本地 SVG Data URL 替代</li>
+                <li>✓ 不再出現網路連接錯誤</li>
+                <li>✓ 離線也能正常顯示佔位圖片</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h2>📸 佔位圖片測試</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img id="test-img" alt="測試圖片">
+                    <p>本地 SVG 佔位圖</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="index.html">🏠 返回首頁</a>
+            <a href="game.html">🎮 遊戲頁面</a>
+            <a href="admin.html">⚙️ 管理頁面</a>
+        </div>
+
+        <p style="margin-top: 20px; color: #999; font-size: 14px; text-align: center;">
+            現在可以安全部署到 Linux 主機了！
+        </p>
+    </div>
+
+    <script>
+        // Test the new placeholder
+        const placeholderSvg = 'data:image/svg+xml;base64,' + btoa(`<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150"><rect width="150" height="150" fill="#e0e0e0"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999">No Image</text></svg>`);
+        
+        document.getElementById('test-img').src = placeholderSvg;
+    </script>
+</body>
+</html>
