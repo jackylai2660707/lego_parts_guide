@@ -1,797 +1,2539 @@
 [
   {
-    "id": "technic_bricks",
-    "title": "0. 基礎系：機械磚 (Technic Bricks)",
-    "description": "結合了傳統積木的凸點與機械系的孔洞，是結構的基礎。",
+    "id": "cat_0",
+    "title": "Animal, Land",
+    "description": "Parts in category Animal, Land",
     "subcategories": [
       {
-        "title": "機械磚 (Technic Bricks)",
-        "description": "側面有孔洞的積木，用於結合橫向與縱向結構。",
+        "title": "Animal, Land",
         "parts": [
           {
-            "id": "6541",
-            "name": "1x1 機械磚",
-            "visual": "單孔，常用於轉向結構",
-            "colorId": 86
-          },
-          {
-            "id": "3700",
-            "name": "1x2 機械磚",
-            "visual": "單孔",
-            "colorId": 86
-          },
-          {
-            "id": "3701",
-            "name": "1x4 機械磚",
-            "visual": "3孔",
-            "colorId": 86
-          },
-          {
-            "id": "3894",
-            "name": "1x6 機械磚",
-            "visual": "5孔",
-            "colorId": 86
-          },
-          {
-            "id": "3702",
-            "name": "1x8 機械磚",
-            "visual": "7孔",
-            "colorId": 86
-          },
-          {
-            "id": "2730",
-            "name": "1x10 機械磚",
-            "visual": "9孔",
-            "colorId": 86
-          },
-          {
-            "id": "3895",
-            "name": "1x12 機械磚",
-            "visual": "11孔",
-            "colorId": 86
-          },
-          {
-            "id": "32018",
-            "name": "1x14 機械磚",
-            "visual": "13孔",
-            "colorId": 86
-          },
-          {
-            "id": "3703",
-            "name": "1x16 機械磚",
-            "visual": "15孔",
-            "colorId": 86
+            "id": "95342",
+            "name": "White Chicken, Narrow Base",
+            "colorId": 1,
+            "category": "Animal, Land",
+            "visual": "White Chicken, Narrow Base"
           }
         ]
       }
     ]
   },
   {
-    "id": "structural",
-    "title": "1. 結構系：機械樑 (Beams/Liftarms)",
-    "description": "依據「厚度」與「形狀」區分。引導學生觀察樑的厚度與孔洞排列。",
+    "id": "cat_1",
+    "title": "BIONICLE",
+    "description": "Parts in category BIONICLE",
     "subcategories": [
       {
-        "title": "1.1 厚型直樑 (Thick Beams)",
-        "description": "特徵：厚度 1M (約 8mm)，孔洞有凹槽，銷釘頭可沉入。通常用於主要骨架。",
+        "title": "BIONICLE",
         "parts": [
           {
-            "id": "43857",
-            "name": "2L 厚樑",
-            "visual": "極短，像花生殼，只有兩個孔",
-            "colorId": 11
+            "id": "x346",
+            "name": "Red Bionicle 1 x 3 Tooth with Axle Hole (Bohrok Eye)",
+            "colorId": 5,
+            "category": "BIONICLE",
+            "visual": "Red Bionicle 1 x 3 Tooth with Axle Hole (Bohrok Eye)"
           },
           {
-            "id": "32523",
-            "name": "3L 厚樑",
-            "visual": "短條狀，三個孔",
-            "colorId": 3
+            "id": "x346",
+            "name": "White Bionicle 1 x 3 Tooth with Axle Hole (Bohrok Eye)",
+            "colorId": 1,
+            "category": "BIONICLE",
+            "visual": "White Bionicle 1 x 3 Tooth with Axle Hole (Bohrok Eye)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_2",
+    "title": "Ball",
+    "description": "Parts in category Ball",
+    "subcategories": [
+      {
+        "title": "Ball",
+        "parts": [
+          {
+            "id": "52629",
+            "name": "White Wheel Ball, Hard Plastic 19mm D.",
+            "colorId": 1,
+            "category": "Ball",
+            "visual": "White Wheel Ball, Hard Plastic 19mm D."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_3",
+    "title": "Bracket",
+    "description": "Parts in category Bracket",
+    "subcategories": [
+      {
+        "title": "Bracket",
+        "parts": [
+          {
+            "id": "11215",
+            "name": "White Bracket 5 x 2 x 1 1/3 with 2 Holes and Bottom Tube",
+            "colorId": 1,
+            "category": "Bracket",
+            "visual": "White Bracket 5 x 2 x 1 1/3 with 2 Holes and Bottom Tube"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_4",
+    "title": "Brick",
+    "description": "Parts in category Brick",
+    "subcategories": [
+      {
+        "title": "Brick",
+        "parts": [
+          {
+            "id": "3003",
+            "name": "Black Brick 2 x 2",
+            "colorId": 11,
+            "category": "Brick",
+            "visual": "Black Brick 2 x 2"
           },
           {
-            "id": "32316",
-            "name": "5L 厚樑",
-            "visual": "中短條狀，常見黃色或黑色",
-            "colorId": 3
+            "id": "3003",
+            "name": "Medium Azure Brick 2 x 2",
+            "colorId": 156,
+            "category": "Brick",
+            "visual": "Medium Azure Brick 2 x 2"
           },
           {
-            "id": "32524",
-            "name": "7L 厚樑",
-            "visual": "中長條狀",
-            "colorId": 86
+            "id": "3003",
+            "name": "White Brick 2 x 2",
+            "colorId": 1,
+            "category": "Brick",
+            "visual": "White Brick 2 x 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_5",
+    "title": "Brick, Round",
+    "description": "Parts in category Brick, Round",
+    "subcategories": [
+      {
+        "title": "Brick, Round",
+        "parts": [
+          {
+            "id": "3941",
+            "name": "Trans-Light Blue Brick, Round 2 x 2 with Axle Hole",
+            "colorId": 15,
+            "category": "Brick, Round",
+            "visual": "Trans-Light Blue Brick, Round 2 x 2 with Axle Hole"
           },
           {
-            "id": "40490",
-            "name": "9L 厚樑",
-            "visual": "長條狀",
-            "colorId": 86
+            "id": "3941",
+            "name": "Trans-Neon Green Brick, Round 2 x 2 with Axle Hole",
+            "colorId": 16,
+            "category": "Brick, Round",
+            "visual": "Trans-Neon Green Brick, Round 2 x 2 with Axle Hole"
           },
           {
-            "id": "32525",
-            "name": "11L 厚樑",
-            "visual": "長條狀，車身主結構常用",
-            "colorId": 86
+            "id": "3941",
+            "name": "White Brick, Round 2 x 2 with Axle Hole",
+            "colorId": 1,
+            "category": "Brick, Round",
+            "visual": "White Brick, Round 2 x 2 with Axle Hole"
           },
           {
-            "id": "41239",
-            "name": "13L 厚樑",
-            "visual": "特長條狀，孔數為 13",
-            "colorId": 86
+            "id": "3941",
+            "name": "Yellow Brick, Round 2 x 2 with Axle Hole",
+            "colorId": 3,
+            "category": "Brick, Round",
+            "visual": "Yellow Brick, Round 2 x 2 with Axle Hole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_6",
+    "title": "Cone",
+    "description": "Parts in category Cone",
+    "subcategories": [
+      {
+        "title": "Cone",
+        "parts": [
+          {
+            "id": "4589b",
+            "name": "Trans-Red Cone 1 x 1 with Top Groove",
+            "colorId": 17,
+            "category": "Cone",
+            "visual": "Trans-Red Cone 1 x 1 with Top Groove"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_7",
+    "title": "Dish",
+    "description": "Parts in category Dish",
+    "subcategories": [
+      {
+        "title": "Dish",
+        "parts": [
+          {
+            "id": "44375b",
+            "name": "Trans-Clear Dish 6 x 6 Inverted (Radar) - Solid Studs",
+            "colorId": 12,
+            "category": "Dish",
+            "visual": "Trans-Clear Dish 6 x 6 Inverted (Radar) - Solid Studs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_8",
+    "title": "Electric",
+    "description": "Parts in category Electric",
+    "subcategories": [
+      {
+        "title": "Electric",
+        "parts": [
+          {
+            "id": "37308c01",
+            "name": "Black Electric Sensor, Color - SPIKE Prime",
+            "colorId": 11,
+            "category": "Electric",
+            "visual": "Black Electric Sensor, Color - SPIKE Prime"
           },
           {
-            "id": "32278",
-            "name": "15L 厚樑",
-            "visual": "最長的標準直樑，常用於大型起重臂",
-            "colorId": 86
+            "id": "37316c01",
+            "name": "Black Electric Sensor, Distance - SPIKE Prime",
+            "colorId": 11,
+            "category": "Electric",
+            "visual": "Black Electric Sensor, Distance - SPIKE Prime"
           },
           {
-            "id": "666",
-            "name": "666",
-            "visual": "666",
+            "id": "37312c01",
+            "name": "Black Electric Sensor, Force - SPIKE Prime",
+            "colorId": 11,
+            "category": "Electric",
+            "visual": "Black Electric Sensor, Force - SPIKE Prime"
+          },
+          {
+            "id": "95650",
+            "name": "Electric Sensor, Color - EV3",
+            "colorId": 0,
+            "category": "Electric",
+            "visual": "Electric Sensor, Color - EV3"
+          },
+          {
+            "id": "99380",
+            "name": "Electric Sensor, Gyro - EV3",
+            "colorId": 0,
+            "category": "Electric",
+            "visual": "Electric Sensor, Gyro - EV3"
+          },
+          {
+            "id": "95648",
+            "name": "Electric Sensor, Touch - EV3",
+            "colorId": 0,
+            "category": "Electric",
+            "visual": "Electric Sensor, Touch - EV3"
+          },
+          {
+            "id": "95652",
+            "name": "Electric Sensor, Ultrasonic - EV3",
+            "colorId": 0,
+            "category": "Electric",
+            "visual": "Electric Sensor, Ultrasonic - EV3"
+          },
+          {
+            "id": "95656",
+            "name": "Light Bluish Gray Electric Rechargeable Battery DC - EV3",
             "colorId": 86,
-            "customImage": "https://static.bricklink.com/renovate/img/catalog-sets.png"
-          }
-        ]
-      },
-      {
-        "title": "1.2 薄型直樑 (Thin Beams)",
-        "description": "特徵：厚度 0.5M，表面平整無凹槽。用於連桿或堆疊調整。",
-        "parts": [
-          {
-            "id": "41677",
-            "name": "2L 薄樑",
-            "visual": "極小，有兩個小孔",
-            "colorId": 11
+            "category": "Electric",
+            "visual": "Light Bluish Gray Electric Rechargeable Battery DC - EV3"
           },
           {
-            "id": "6632",
-            "name": "3L 薄樑",
-            "visual": "常見，用於轉向拉桿",
-            "colorId": 7
-          },
-          {
-            "id": "32449",
-            "name": "4L 薄樑",
-            "visual": "偶數長度，兩端有軸孔或圓孔",
-            "colorId": 86
-          },
-          {
-            "id": "32017",
-            "name": "5L 薄樑",
-            "visual": "薄型直樑",
-            "colorId": 86
-          },
-          {
-            "id": "32063",
-            "name": "6L 薄樑",
-            "visual": "薄型直樑",
-            "colorId": 86
-          }
-        ]
-      },
-      {
-        "title": "1.3 異形樑 (Angled Beams)",
-        "description": "特徵：具有特定角度，用於轉角或支撐。",
-        "parts": [
-          {
-            "id": "32140",
-            "name": "L型 2x4",
-            "visual": "直角 L 形，一邊 2 孔，一邊 4 孔",
-            "colorId": 11
-          },
-          {
-            "id": "32526",
-            "name": "L型 3x5",
-            "visual": "直角 L 形，最常見的結構加固件",
-            "colorId": 86
-          },
-          {
-            "id": "60484",
-            "name": "T型 3x3",
-            "visual": "T 字形，三個方向各 1 孔",
-            "colorId": 11
-          },
-          {
-            "id": "32009",
-            "name": "雙彎樑 (Double Bent)",
-            "visual": "形狀像閃電或階梯，用於結構錯位",
-            "colorId": 11
-          },
-          {
-            "id": "32271",
-            "name": "L型 3x7 (4x2)",
-            "visual": "較長的 L 型樑",
-            "colorId": 11
-          },
-          {
-            "id": "32056",
-            "name": "L型 3x3 薄樑",
-            "visual": "薄型 L 結構",
-            "colorId": 86
-          }
-        ]
-      },
-      {
-        "title": "1.4 框架 (Frames)",
-        "description": "大型結構件，用於快速建構堅固底盤。",
-        "parts": [
-          {
-            "id": "64179",
-            "name": "5x7 框架",
-            "visual": "矩形框架，中間有孔",
-            "colorId": 86
-          },
-          {
-            "id": "64178",
-            "name": "5x11 框架",
-            "visual": "大型矩形框架",
-            "colorId": 86
-          },
-          {
-            "id": "32531",
-            "name": "4x6 科技板 (帶孔)",
-            "visual": "常用於底盤結構",
-            "colorId": 11
+            "id": "55422c01",
+            "name": "Yellow Electric Rechargeable Battery 7.3V Large - SPIKE Prime",
+            "colorId": 3,
+            "category": "Electric",
+            "visual": "Yellow Electric Rechargeable Battery 7.3V Large - SPIKE Prime"
           }
         ]
       }
     ]
   },
   {
-    "id": "connectors",
-    "title": "2. 連接系：銷與連接器 (Pins & Connectors)",
-    "description": "這是最容易混淆的區域。請學生依據「顏色」與「摩擦力」分類。",
+    "id": "cat_9",
+    "title": "Electric, Motor",
+    "description": "Parts in category Electric, Motor",
     "subcategories": [
       {
-        "title": "2.1 銷 (Pins) - 核心分類",
-        "description": "",
+        "title": "Electric, Motor",
         "parts": [
           {
-            "id": "2780",
-            "name": "黑色銷 (摩擦)",
-            "visual": "黑色，表面有微小脊線。功能：卡死",
-            "colorId": 11
+            "id": "95658",
+            "name": "Electric, Motor EV3, Large",
+            "colorId": 0,
+            "category": "Electric, Motor",
+            "visual": "Electric, Motor EV3, Large"
           },
           {
-            "id": "3673",
-            "name": "灰色銷 (平滑)",
-            "visual": "淺灰色，表面光滑。功能：旋轉",
-            "colorId": 86
+            "id": "99455",
+            "name": "Electric, Motor EV3, Medium",
+            "colorId": 0,
+            "category": "Electric, Motor",
+            "visual": "Electric, Motor EV3, Medium"
           },
           {
-            "id": "6558",
-            "name": "藍色長銷 (3L 摩擦)",
-            "visual": "藍色，長度較長（跨 3 孔）",
-            "colorId": 7
+            "id": "54675c01",
+            "name": "Medium Azure Electric, Motor SPIKE Prime / Powered Up, Large Angular with White Top Housing and Cable",
+            "colorId": 156,
+            "category": "Electric, Motor",
+            "visual": "Medium Azure Electric, Motor SPIKE Prime / Powered Up, Large Angular with White Top Housing and Cable"
           },
           {
-            "id": "32556",
-            "name": "米色長銷 (3L 平滑)",
-            "visual": "沙色/米色，長度較長（跨 3 孔），可轉動",
-            "colorId": 2
-          },
-          {
-            "id": "43093",
-            "name": "軸銷 (Axle Pin) 藍",
-            "visual": "一端圓柱一端十字。藍色為有摩擦",
-            "colorId": 7
-          },
-          {
-            "id": "3749",
-            "name": "軸銷 (Axle Pin) 沙",
-            "visual": "一端圓柱一端十字。沙色為平滑",
-            "colorId": 2
-          },
-          {
-            "id": "11214",
-            "name": "軸銷 3L (紅)",
-            "visual": "紅色，2L軸+1L銷",
-            "colorId": 5
-          },
-          {
-            "id": "18651",
-            "name": "軸銷 3L (藍)",
-            "visual": "深藍色，2L軸+1L銷",
-            "colorId": 63
-          }
-        ]
-      },
-      {
-        "title": "2.2 角度與特殊連接器",
-        "description": "用於改變角度或連接不同類型的零件。",
-        "parts": [
-          {
-            "id": "32013",
-            "name": "#1 (22.5°)",
-            "visual": "紅色/灰色，微彎",
-            "colorId": 5
-          },
-          {
-            "id": "32034",
-            "name": "#2 (180°)",
-            "visual": "直線連接器，延長兩根軸",
-            "colorId": 11
-          },
-          {
-            "id": "32016",
-            "name": "#3 (157.5°)",
-            "visual": "大鈍角",
-            "colorId": 5
-          },
-          {
-            "id": "32192",
-            "name": "#4 (135°)",
-            "visual": "45度角，最常用",
-            "colorId": 86
-          },
-          {
-            "id": "32015",
-            "name": "#5 (112.5°)",
-            "visual": "接近直角",
-            "colorId": 5
-          },
-          {
-            "id": "32014",
-            "name": "#6 (90°)",
-            "visual": "直角",
-            "colorId": 11
-          },
-          {
-            "id": "32184",
-            "name": "垂直軸連接器 (T型)",
-            "visual": "軸孔與銷孔垂直",
-            "colorId": 86
-          },
-          {
-            "id": "6536",
-            "name": "垂直軸連接器 (2孔)",
-            "visual": "兩個軸孔互相垂直",
-            "colorId": 11
-          },
-          {
-            "id": "42003",
-            "name": "3L 垂直連接器",
-            "visual": "兩個銷孔，一個軸孔",
-            "colorId": 86
-          },
-          {
-            "id": "63869",
-            "name": "3L 垂直連接器 (三孔)",
-            "visual": "三個銷孔",
-            "colorId": 86
-          },
-          {
-            "id": "32291",
-            "name": "垂直雙孔連接器",
-            "visual": "用於加固",
-            "colorId": 86
+            "id": "54696c01",
+            "name": "Medium Azure Electric, Motor SPIKE Prime / Powered Up, Medium Angular with White Top Housing and Cable",
+            "colorId": 156,
+            "category": "Electric, Motor",
+            "visual": "Medium Azure Electric, Motor SPIKE Prime / Powered Up, Medium Angular with White Top Housing and Cable"
           }
         ]
       }
     ]
   },
   {
-    "id": "axles",
-    "title": "3. 動力傳輸系：軸 (Axles)",
-    "description": "分類邏輯：利用「顏色編碼」快速分辨奇偶數長度。",
+    "id": "cat_10",
+    "title": "Electric, Programmable",
+    "description": "Parts in category Electric, Programmable",
     "subcategories": [
       {
-        "title": "軸 (Axles)",
-        "description": "",
+        "title": "Electric, Programmable",
         "parts": [
           {
-            "id": "32062",
-            "name": "紅色軸 (2L)",
-            "visual": "紅色，表面有防滑凹槽。最短的軸",
-            "colorId": 5
+            "id": "95646c01",
+            "name": "Mindstorms EV3 - Complete Brick",
+            "colorId": 0,
+            "category": "Electric, Programmable",
+            "visual": "Mindstorms EV3 - Complete Brick"
           },
           {
-            "id": "4519",
-            "name": "灰色軸 (3L)",
-            "visual": "淺灰色 (奇數)",
-            "colorId": 86
-          },
-          {
-            "id": "3705",
-            "name": "黑色軸 (4L)",
-            "visual": "黑色 (偶數)",
-            "colorId": 11
-          },
-          {
-            "id": "32073",
-            "name": "灰色軸 (5L)",
-            "visual": "淺灰色 (奇數)",
-            "colorId": 86
-          },
-          {
-            "id": "3706",
-            "name": "黑色軸 (6L)",
-            "visual": "黑色 (偶數)",
-            "colorId": 11
-          },
-          {
-            "id": "44294",
-            "name": "灰色軸 (7L)",
-            "visual": "淺灰色 (奇數)",
-            "colorId": 86
-          },
-          {
-            "id": "3707",
-            "name": "黑色軸 (8L)",
-            "visual": "黑色 (偶數)",
-            "colorId": 11
-          },
-          {
-            "id": "60485",
-            "name": "灰色軸 (9L)",
-            "visual": "淺灰色 (奇數)",
-            "colorId": 86
-          },
-          {
-            "id": "3737",
-            "name": "黑色軸 (10L)",
-            "visual": "黑色 (偶數)",
-            "colorId": 11
-          },
-          {
-            "id": "3708",
-            "name": "黑色軸 (12L)",
-            "visual": "黑色 (偶數)",
-            "colorId": 11
-          },
-          {
-            "id": "87083",
-            "name": "止擋軸 (4L)",
-            "visual": "一端有圓盤，防止穿過孔洞",
-            "colorId": 85
-          },
-          {
-            "id": "24316",
-            "name": "止擋軸 (3L)",
-            "visual": "紅棕色，一端有圓盤",
-            "colorId": 88
+            "id": "53444c01",
+            "name": "Yellow Electric, Hub Large - SPIKE Prime",
+            "colorId": 3,
+            "category": "Electric, Programmable",
+            "visual": "Yellow Electric, Hub Large - SPIKE Prime"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "cat_11",
+    "title": "Electric, Wire & Connector",
+    "description": "Parts in category Electric, Wire & Connector",
+    "subcategories": [
       {
-        "title": "軸套與墊片 (Bushes)",
-        "description": "用於固定軸的位置。",
+        "title": "Electric, Wire & Connector",
         "parts": [
+          {
+            "id": "10916",
+            "name": "Black Electric, Cable USB for Mindstorms EV3, Male USB-A to Male USB Mini-B (Length 2m / 6ft)",
+            "colorId": 11,
+            "category": "Electric, Wire & Connector",
+            "visual": "Black Electric, Cable USB for Mindstorms EV3, Male USB-A to Male USB Mini-B (Length 2m / 6ft)"
+          },
+          {
+            "id": "bb0601",
+            "name": "Black Electric, Connector Cable, Mindstorms NXT 25cm",
+            "colorId": 11,
+            "category": "Electric, Wire & Connector",
+            "visual": "Black Electric, Connector Cable, Mindstorms NXT 25cm"
+          },
+          {
+            "id": "55805",
+            "name": "Black Electric, Connector Cable, Mindstorms NXT 35cm",
+            "colorId": 11,
+            "category": "Electric, Wire & Connector",
+            "visual": "Black Electric, Connector Cable, Mindstorms NXT 35cm"
+          },
+          {
+            "id": "55806",
+            "name": "Black Electric, Connector Cable, Mindstorms NXT 50cm",
+            "colorId": 11,
+            "category": "Electric, Wire & Connector",
+            "visual": "Black Electric, Connector Cable, Mindstorms NXT 50cm"
+          },
+          {
+            "id": "39881c01",
+            "name": "White Electric, Cable USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)",
+            "colorId": 1,
+            "category": "Electric, Wire & Connector",
+            "visual": "White Electric, Cable USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_12",
+    "title": "Hero Factory",
+    "description": "Parts in category Hero Factory",
+    "subcategories": [
+      {
+        "title": "Hero Factory",
+        "parts": [
+          {
+            "id": "98578",
+            "name": "Trans-Dark Blue Hero Factory Weapon, Spiked Ball Half with Axle Hole",
+            "colorId": 14,
+            "category": "Hero Factory",
+            "visual": "Trans-Dark Blue Hero Factory Weapon, Spiked Ball Half with Axle Hole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_13",
+    "title": "Hose",
+    "description": "Parts in category Hose",
+    "subcategories": [
+      {
+        "title": "Hose",
+        "parts": [
+          {
+            "id": "57539",
+            "name": "Flat Silver Hose, Flexible Ribbed with 8mm Ends 19L / 15.2cm",
+            "colorId": 95,
+            "category": "Hose",
+            "visual": "Flat Silver Hose, Flexible Ribbed with 8mm Ends 19L / 15.2cm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_14",
+    "title": "Hose, Ribbed 7mm D.",
+    "description": "Parts in category Hose, Ribbed 7mm D.",
+    "subcategories": [
+      {
+        "title": "Hose, Ribbed 7mm D.",
+        "parts": [
+          {
+            "id": "78c19",
+            "name": "Trans-Light Blue Hose, Ribbed 7mm D. 19L / 15.2cm",
+            "colorId": 15,
+            "category": "Hose, Ribbed 7mm D.",
+            "visual": "Trans-Light Blue Hose, Ribbed 7mm D. 19L / 15.2cm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_15",
+    "title": "Plate",
+    "description": "Parts in category Plate",
+    "subcategories": [
+      {
+        "title": "Plate",
+        "parts": [
+          {
+            "id": "4282",
+            "name": "Magenta Plate 2 x 16",
+            "colorId": 71,
+            "category": "Plate",
+            "visual": "Magenta Plate 2 x 16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_16",
+    "title": "Plate, Round",
+    "description": "Parts in category Plate, Round",
+    "subcategories": [
+      {
+        "title": "Plate, Round",
+        "parts": [
+          {
+            "id": "4032",
+            "name": "Black Plate, Round 2 x 2 with Axle Hole",
+            "colorId": 11,
+            "category": "Plate, Round",
+            "visual": "Black Plate, Round 2 x 2 with Axle Hole"
+          },
+          {
+            "id": "2654",
+            "name": "Black Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)",
+            "colorId": 11,
+            "category": "Plate, Round",
+            "visual": "Black Plate, Round 2 x 2 with Rounded Bottom (Boat Stud)"
+          },
+          {
+            "id": "4032",
+            "name": "Medium Azure Plate, Round 2 x 2 with Axle Hole",
+            "colorId": 156,
+            "category": "Plate, Round",
+            "visual": "Medium Azure Plate, Round 2 x 2 with Axle Hole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_17",
+    "title": "Rubber Band & Belt",
+    "description": "Parts in category Rubber Band & Belt",
+    "subcategories": [
+      {
+        "title": "Rubber Band & Belt",
+        "parts": [
+          {
+            "id": "x89",
+            "name": "Blue Rubber Belt Large (Round Cross Section) - Approx. 3 1/4 x 3 1/4",
+            "colorId": 7,
+            "category": "Rubber Band & Belt",
+            "visual": "Blue Rubber Belt Large (Round Cross Section) - Approx. 3 1/4 x 3 1/4"
+          },
+          {
+            "id": "x37",
+            "name": "Red Rubber Belt Medium (Round Cross Section) - Approx. 3 x 3",
+            "colorId": 5,
+            "category": "Rubber Band & Belt",
+            "visual": "Red Rubber Belt Medium (Round Cross Section) - Approx. 3 x 3"
+          },
+          {
+            "id": "x71",
+            "name": "White Rubber Belt Small (Round Cross Section) - Approx. 2 x 2",
+            "colorId": 1,
+            "category": "Rubber Band & Belt",
+            "visual": "White Rubber Belt Small (Round Cross Section) - Approx. 2 x 2"
+          },
+          {
+            "id": "x90",
+            "name": "Yellow Rubber Belt Extra Large (Round Cross Section) - Approx. 4 1/8 x 4 1/8",
+            "colorId": 3,
+            "category": "Rubber Band & Belt",
+            "visual": "Yellow Rubber Belt Extra Large (Round Cross Section) - Approx. 4 1/8 x 4 1/8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_18",
+    "title": "Slope",
+    "description": "Parts in category Slope",
+    "subcategories": [
+      {
+        "title": "Slope",
+        "parts": [
+          {
+            "id": "85984",
+            "name": "Yellow Slope 30 1 x 2 x 2/3",
+            "colorId": 3,
+            "category": "Slope",
+            "visual": "Yellow Slope 30 1 x 2 x 2/3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_19",
+    "title": "Slope, Curved",
+    "description": "Parts in category Slope, Curved",
+    "subcategories": [
+      {
+        "title": "Slope, Curved",
+        "parts": [
+          {
+            "id": "44126",
+            "name": "Black Slope, Curved 6 x 2",
+            "colorId": 11,
+            "category": "Slope, Curved",
+            "visual": "Black Slope, Curved 6 x 2"
+          },
+          {
+            "id": "24309",
+            "name": "Yellow Slope, Curved 3 x 2",
+            "colorId": 3,
+            "category": "Slope, Curved",
+            "visual": "Yellow Slope, Curved 3 x 2"
+          },
+          {
+            "id": "42022",
+            "name": "Yellow Slope, Curved 6 x 1 with 2 Studs",
+            "colorId": 3,
+            "category": "Slope, Curved",
+            "visual": "Yellow Slope, Curved 6 x 1 with 2 Studs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_20",
+    "title": "Sticker Sheet",
+    "description": "Parts in category Sticker Sheet",
+    "subcategories": [
+      {
+        "title": "Sticker Sheet",
+        "parts": [
+          {
+            "id": "45544stk01",
+            "name": "Sticker Sheet for Set 45544 - (42806)",
+            "colorId": 0,
+            "category": "Sticker Sheet",
+            "visual": "Sticker Sheet for Set 45544 - (42806)"
+          },
+          {
+            "id": "45678stk01",
+            "name": "Sticker Sheet for Set 45678 - (57277/6268046)",
+            "colorId": 0,
+            "category": "Sticker Sheet",
+            "visual": "Sticker Sheet for Set 45678 - (57277/6268046)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_21",
+    "title": "Technic",
+    "description": "Parts in category Technic",
+    "subcategories": [
+      {
+        "title": "Technic",
+        "parts": [
+          {
+            "id": "99010",
+            "name": "Black Technic Turntable 28 Tooth, Top",
+            "colorId": 11,
+            "category": "Technic",
+            "visual": "Black Technic Turntable 28 Tooth, Top"
+          },
+          {
+            "id": "18938u",
+            "name": "Black Technic Turntable 60 Tooth, Top (Undetermined Type)",
+            "colorId": 11,
+            "category": "Technic",
+            "visual": "Black Technic Turntable 60 Tooth, Top (Undetermined Type)"
+          },
+          {
+            "id": "6575",
+            "name": "Dark Bluish Gray Technic Cam",
+            "colorId": 85,
+            "category": "Technic",
+            "visual": "Dark Bluish Gray Technic Cam"
+          },
           {
             "id": "3713",
-            "name": "全軸套 (Bush)",
-            "visual": "紅色/灰色，1M 寬度",
-            "colorId": 5
-          },
-          {
-            "id": "4265c",
-            "name": "半軸套 (Half Bush)",
-            "visual": "黃色/灰色，0.5M 寬度",
-            "colorId": 3
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "gears",
-    "title": "4. 傳動系：齒輪 (Gears)",
-    "description": "依據「齒數」與「形狀」分類。",
-    "subcategories": [
-      {
-        "title": "4.1 雙斜面齒輪 (Double Bevel)",
-        "description": "特徵：齒面呈沙漏狀，可平行或垂直咬合。",
-        "parts": [
-          {
-            "id": "32270",
-            "name": "12齒 (12T)",
-            "visual": "黑色，最小的錐齒輪",
-            "colorId": 11
-          },
-          {
-            "id": "32269",
-            "name": "20齒 (20T)",
-            "visual": "米色或黑色，中型",
-            "colorId": 2
-          },
-          {
-            "id": "46372",
-            "name": "28齒 (28T)",
-            "visual": "灰色，常配合差速器使用",
-            "colorId": 86
-          },
-          {
-            "id": "32498",
-            "name": "36齒 (36T)",
-            "visual": "黑色，大型",
-            "colorId": 11
-          }
-        ]
-      },
-      {
-        "title": "4.2 傳統/特殊齒輪",
-        "description": "",
-        "parts": [
-          {
-            "id": "10928",
-            "name": "8齒 (8T)",
-            "visual": "深灰色，極小",
-            "colorId": 85
-          },
-          {
-            "id": "3647",
-            "name": "8齒 (8T) 舊版",
-            "visual": "灰色，無摩擦",
-            "colorId": 86
-          },
-          {
-            "id": "94925",
-            "name": "16齒 (16T) 加強版",
-            "visual": "灰色，常用於馬達直接輸出",
-            "colorId": 86
-          },
-          {
-            "id": "3648",
-            "name": "24齒 (24T)",
-            "visual": "深灰色，有三個孔，經典零件",
-            "colorId": 85
-          },
-          {
-            "id": "3649",
-            "name": "40齒 (40T)",
-            "visual": "灰色，最大直徑",
-            "colorId": 86
-          },
-          {
-            "id": "32072",
-            "name": "球型齒輪 (Knob Wheel)",
-            "visual": "黑色，4齒，用於高扭力垂直傳動",
-            "colorId": 11
-          },
-          {
-            "id": "62821b",
-            "name": "差速器 (Differential)",
-            "visual": "灰色方塊狀，內部有小齒輪",
+            "name": "Light Bluish Gray Technic Bush",
             "colorId": 86,
-            "elementId": "4525184"
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Bush"
           },
           {
-            "id": "4716",
-            "name": "蝸桿 (Worm Gear)",
-            "visual": "圓柱螺旋狀，用於減速與自鎖",
-            "colorId": 11
-          },
-          {
-            "id": "60c01",
-            "name": "離合齒輪 (Clutch 24T)",
-            "visual": "白色中心，受力過大會打滑保護馬達",
-            "colorId": 86
-          },
-          {
-            "id": "18946",
-            "name": "齒條 (Rack Gear) 20T",
-            "visual": "直線齒輪，用於轉向",
-            "colorId": 11
-          },
-          {
-            "id": "18938",
-            "name": "轉盤 (Turntable) 60T",
-            "visual": "大型轉盤，用於怪手旋轉",
-            "colorId": 11
+            "id": "99009c01",
+            "name": "Light Bluish Gray Technic Turntable 28 Tooth with Black Top (99009 / 99010)",
+            "colorId": 86,
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Turntable 28 Tooth with Black Top (99009 / 99010)"
           },
           {
             "id": "99009",
-            "name": "小型轉盤 (Turntable)",
-            "visual": "小型旋轉結構",
-            "colorId": 11
+            "name": "Light Bluish Gray Technic Turntable 28 Tooth, Base",
+            "colorId": 86,
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Turntable 28 Tooth, Base"
+          },
+          {
+            "id": "48452cx1",
+            "name": "Light Bluish Gray Technic Turntable 56 Tooth with Black Top (48452 / 48168)",
+            "colorId": 86,
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Turntable 56 Tooth with Black Top (48452 / 48168)"
+          },
+          {
+            "id": "18939c01",
+            "name": "Light Bluish Gray Technic Turntable 60 Tooth with Black Top (18939 / 18938u) (Undetermined Type)",
+            "colorId": 86,
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Turntable 60 Tooth with Black Top (18939 / 18938u) (Undetermined Type)"
+          },
+          {
+            "id": "18939",
+            "name": "Light Bluish Gray Technic Turntable 60 Tooth, Base",
+            "colorId": 86,
+            "category": "Technic",
+            "visual": "Light Bluish Gray Technic Turntable 60 Tooth, Base"
+          },
+          {
+            "id": "6641",
+            "name": "Red Technic Changeover Catch",
+            "colorId": 5,
+            "category": "Technic",
+            "visual": "Red Technic Changeover Catch"
+          },
+          {
+            "id": "6539",
+            "name": "Red Technic Driving Ring 2L with 4 Teeth",
+            "colorId": 5,
+            "category": "Technic",
+            "visual": "Red Technic Driving Ring 2L with 4 Teeth"
+          },
+          {
+            "id": "99948",
+            "name": "Technic Ball Steel 18mm D.",
+            "colorId": 0,
+            "category": "Technic",
+            "visual": "Technic Ball Steel 18mm D."
+          },
+          {
+            "id": "4265c",
+            "name": "Yellow Technic Bush 1/2 Smooth",
+            "colorId": 3,
+            "category": "Technic",
+            "visual": "Yellow Technic Bush 1/2 Smooth"
           }
         ]
       }
     ]
   },
   {
-    "id": "functional",
-    "title": "5. 機械功能件 (Functional Parts)",
-    "description": "",
+    "id": "cat_22",
+    "title": "Technic, Axle",
+    "description": "Parts in category Technic, Axle",
     "subcategories": [
       {
-        "title": "5.1 轉向與懸吊",
-        "description": "",
+        "title": "Technic, Axle",
         "parts": [
           {
-            "id": "61903",
-            "name": "萬向節 (Universal Joint)",
-            "visual": "銀灰色/灰色，允許軸彎折傳動",
-            "colorId": 86
-          },
-          {
-            "id": "52731",
-            "name": "CV 球頭節",
-            "visual": "類似骨頭關節，轉向更平順",
-            "colorId": 86
-          },
-          {
-            "id": "76537",
-            "name": "避震器 (Shock Absorber)",
-            "visual": "依彈簧顏色分軟硬",
-            "colorId": 86
-          },
-          {
-            "id": "56908",
-            "name": "轉向座 (Wheel Hub)",
-            "visual": "安裝輪胎的支架，有球頭孔",
-            "colorId": 86
-          },
-          {
-            "id": "92909",
-            "name": "轉向座 (Portal Hub)",
-            "visual": "大型車輛使用",
-            "colorId": 86
-          },
-          {
-            "id": "32294",
-            "name": "懸吊臂 (Wishbone)",
-            "visual": "Y型懸吊臂",
-            "colorId": 86
-          }
-        ]
-      },
-      {
-        "title": "5.2 致動器與氣壓",
-        "description": "",
-        "parts": [
-          {
-            "id": "61927",
-            "name": "線性致動器 (小型)",
-            "visual": "伸縮桿，模擬液壓缸",
-            "colorId": 86
-          },
-          {
-            "id": "40918",
-            "name": "線性致動器 (大型)",
-            "visual": "大型伸縮桿",
-            "colorId": 86,
-            "elementId": "6240630"
-          },
-          {
-            "id": "19478",
-            "name": "氣壓幫浦 (Pump)",
-            "visual": "藍色頭，手動打氣",
+            "id": "3705",
+            "name": "Black Technic, Axle  4L",
             "colorId": 11,
-            "elementId": "6024090"
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle  4L"
           },
           {
-            "id": "19475",
-            "name": "氣壓缸 (Cylinder)",
-            "visual": "利用空氣推動伸縮",
-            "colorId": 86,
-            "elementId": "6152364"
+            "id": "3706",
+            "name": "Black Technic, Axle  6L",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle  6L"
           },
           {
-            "id": "4694b",
-            "name": "氣壓開關 (Switch)",
-            "visual": "控制氣流方向",
+            "id": "3707",
+            "name": "Black Technic, Axle  8L",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle  8L"
+          },
+          {
+            "id": "3737",
+            "name": "Black Technic, Axle 10L",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle 10L"
+          },
+          {
+            "id": "3708",
+            "name": "Black Technic, Axle 12L",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle 12L"
+          },
+          {
+            "id": "18651",
+            "name": "Black Technic, Axle 2L with Pin with Friction Ridges",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle 2L with Pin with Friction Ridges"
+          },
+          {
+            "id": "50450",
+            "name": "Black Technic, Axle 32L",
+            "colorId": 11,
+            "category": "Technic, Axle",
+            "visual": "Black Technic, Axle 32L"
+          },
+          {
+            "id": "43093",
+            "name": "Blue Technic, Axle  1L with Pin with Friction Ridges",
+            "colorId": 7,
+            "category": "Technic, Axle",
+            "visual": "Blue Technic, Axle  1L with Pin with Friction Ridges"
+          },
+          {
+            "id": "6553",
+            "name": "Dark Bluish Gray Technic, Axle  2L with Reverser Handle Axle Connector",
+            "colorId": 85,
+            "category": "Technic, Axle",
+            "visual": "Dark Bluish Gray Technic, Axle  2L with Reverser Handle Axle Connector"
+          },
+          {
+            "id": "87083",
+            "name": "Dark Bluish Gray Technic, Axle  4L with Stop",
+            "colorId": 85,
+            "category": "Technic, Axle",
+            "visual": "Dark Bluish Gray Technic, Axle  4L with Stop"
+          },
+          {
+            "id": "32209",
+            "name": "Dark Bluish Gray Technic, Axle  5.5L with Stop",
+            "colorId": 85,
+            "category": "Technic, Axle",
+            "visual": "Dark Bluish Gray Technic, Axle  5.5L with Stop"
+          },
+          {
+            "id": "55013",
+            "name": "Dark Bluish Gray Technic, Axle  8L with Stop",
+            "colorId": 85,
+            "category": "Technic, Axle",
+            "visual": "Dark Bluish Gray Technic, Axle  8L with Stop"
+          },
+          {
+            "id": "6587",
+            "name": "Dark Tan Technic, Axle  3L with Stud",
+            "colorId": 69,
+            "category": "Technic, Axle",
+            "visual": "Dark Tan Technic, Axle  3L with Stud"
+          },
+          {
+            "id": "2736",
+            "name": "Light Bluish Gray Technic, Axle  1L with Tow Ball",
             "colorId": 86,
-            "elementId": "6020180"
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  1L with Tow Ball"
+          },
+          {
+            "id": "6553",
+            "name": "Light Bluish Gray Technic, Axle  2L with Reverser Handle Axle Connector",
+            "colorId": 86,
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  2L with Reverser Handle Axle Connector"
+          },
+          {
+            "id": "4519",
+            "name": "Light Bluish Gray Technic, Axle  3L",
+            "colorId": 86,
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  3L"
+          },
+          {
+            "id": "32073",
+            "name": "Light Bluish Gray Technic, Axle  5L",
+            "colorId": 86,
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  5L"
+          },
+          {
+            "id": "44294",
+            "name": "Light Bluish Gray Technic, Axle  7L",
+            "colorId": 86,
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  7L"
+          },
+          {
+            "id": "60485",
+            "name": "Light Bluish Gray Technic, Axle  9L",
+            "colorId": 86,
+            "category": "Technic, Axle",
+            "visual": "Light Bluish Gray Technic, Axle  9L"
+          },
+          {
+            "id": "11214",
+            "name": "Red Technic, Axle  1L with Pin 2L with Friction Ridges",
+            "colorId": 5,
+            "category": "Technic, Axle",
+            "visual": "Red Technic, Axle  1L with Pin 2L with Friction Ridges"
+          },
+          {
+            "id": "32062",
+            "name": "Red Technic, Axle  2L Notched",
+            "colorId": 5,
+            "category": "Technic, Axle",
+            "visual": "Red Technic, Axle  2L Notched"
+          },
+          {
+            "id": "3706",
+            "name": "Red Technic, Axle  6L",
+            "colorId": 5,
+            "category": "Technic, Axle",
+            "visual": "Red Technic, Axle  6L"
+          },
+          {
+            "id": "3708",
+            "name": "Red Technic, Axle 12L",
+            "colorId": 5,
+            "category": "Technic, Axle",
+            "visual": "Red Technic, Axle 12L"
+          },
+          {
+            "id": "15462",
+            "name": "Reddish Brown Technic, Axle  5L with Stop",
+            "colorId": 88,
+            "category": "Technic, Axle",
+            "visual": "Reddish Brown Technic, Axle  5L with Stop"
+          },
+          {
+            "id": "3749",
+            "name": "Tan Technic, Axle  1L with Pin without Friction Ridges with Round Hole",
+            "colorId": 2,
+            "category": "Technic, Axle",
+            "visual": "Tan Technic, Axle  1L with Pin without Friction Ridges with Round Hole"
+          },
+          {
+            "id": "99008",
+            "name": "Tan Technic, Axle  4L with Center Stop",
+            "colorId": 2,
+            "category": "Technic, Axle",
+            "visual": "Tan Technic, Axle  4L with Center Stop"
+          },
+          {
+            "id": "23948",
+            "name": "Yellow Technic, Axle 11L",
+            "colorId": 3,
+            "category": "Technic, Axle",
+            "visual": "Yellow Technic, Axle 11L"
+          },
+          {
+            "id": "4519",
+            "name": "Yellow Technic, Axle 3L",
+            "colorId": 3,
+            "category": "Technic, Axle",
+            "visual": "Yellow Technic, Axle 3L"
+          },
+          {
+            "id": "44294",
+            "name": "Yellow Technic, Axle 7L",
+            "colorId": 3,
+            "category": "Technic, Axle",
+            "visual": "Yellow Technic, Axle 7L"
           }
         ]
       }
     ]
   },
   {
-    "id": "panels",
-    "title": "6. 面板與整流罩 (Panels)",
-    "description": "用於覆蓋車體，增加美觀與結構強度。",
+    "id": "cat_23",
+    "title": "Technic, Brick",
+    "description": "Parts in category Technic, Brick",
     "subcategories": [
       {
-        "title": "面板",
-        "description": "通常成對出現 (Left/Right)。",
+        "title": "Technic, Brick",
         "parts": [
+          {
+            "id": "39789",
+            "name": "Blue Technic, Brick 2 x 4 with 3 Axle Holes",
+            "colorId": 7,
+            "category": "Technic, Brick",
+            "visual": "Blue Technic, Brick 2 x 4 with 3 Axle Holes"
+          },
+          {
+            "id": "39789",
+            "name": "Green Technic, Brick 2 x 4 with 3 Axle Holes",
+            "colorId": 6,
+            "category": "Technic, Brick",
+            "visual": "Green Technic, Brick 2 x 4 with 3 Axle Holes"
+          },
+          {
+            "id": "39789",
+            "name": "Magenta Technic, Brick 2 x 4 with 3 Axle Holes",
+            "colorId": 71,
+            "category": "Technic, Brick",
+            "visual": "Magenta Technic, Brick 2 x 4 with 3 Axle Holes"
+          },
+          {
+            "id": "39789",
+            "name": "Red Technic, Brick 2 x 4 with 3 Axle Holes",
+            "colorId": 5,
+            "category": "Technic, Brick",
+            "visual": "Red Technic, Brick 2 x 4 with 3 Axle Holes"
+          },
+          {
+            "id": "39789",
+            "name": "Yellow Technic, Brick 2 x 4 with 3 Axle Holes",
+            "colorId": 3,
+            "category": "Technic, Brick",
+            "visual": "Yellow Technic, Brick 2 x 4 with 3 Axle Holes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_24",
+    "title": "Technic, Connector",
+    "description": "Parts in category Technic, Connector",
+    "subcategories": [
+      {
+        "title": "Technic, Connector",
+        "parts": [
+          {
+            "id": "32013",
+            "name": "Black Technic, Axle and Pin Connector Angled #1",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Angled #1"
+          },
+          {
+            "id": "32034",
+            "name": "Black Technic, Axle and Pin Connector Angled #2 - 180 degrees",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Angled #2 - 180 degrees"
+          },
+          {
+            "id": "32016",
+            "name": "Black Technic, Axle and Pin Connector Angled #3 - 157.5 degrees",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Angled #3 - 157.5 degrees"
+          },
+          {
+            "id": "32015",
+            "name": "Black Technic, Axle and Pin Connector Angled #5 - 112.5 degrees",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Angled #5 - 112.5 degrees"
+          },
+          {
+            "id": "32014",
+            "name": "Black Technic, Axle and Pin Connector Angled #6 - 90 degrees",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Angled #6 - 90 degrees"
+          },
+          {
+            "id": "6536",
+            "name": "Black Technic, Axle and Pin Connector Perpendicular",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Perpendicular"
+          },
+          {
+            "id": "32184",
+            "name": "Black Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole"
+          },
+          {
+            "id": "32291",
+            "name": "Black Technic, Axle and Pin Connector Perpendicular Double",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Perpendicular Double"
+          },
+          {
+            "id": "41678",
+            "name": "Black Technic, Axle and Pin Connector Perpendicular Double Split",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle and Pin Connector Perpendicular Double Split"
+          },
+          {
+            "id": "98585",
+            "name": "Black Technic, Axle Connector Block Round with 2 Pin Holes and 3 Axle Holes (Hero Factory Weapon Barrel)",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle Connector Block Round with 2 Pin Holes and 3 Axle Holes (Hero Factory Weapon Barrel)"
+          },
+          {
+            "id": "45590",
+            "name": "Black Technic, Axle Connector Double - Flexible Rubber",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle Connector Double - Flexible Rubber"
+          },
+          {
+            "id": "32039",
+            "name": "Black Technic, Axle Connector with Axle Hole",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Axle Connector with Axle Hole"
+          },
+          {
+            "id": "39793",
+            "name": "Black Technic, Pin Connector Block, Liftarm 1 x 3 x 3",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Pin Connector Block, Liftarm 1 x 3 x 3"
+          },
+          {
+            "id": "87408",
+            "name": "Black Technic, Pin Connector Toggle Joint Smooth Double with Axle and Pin Holes",
+            "colorId": 11,
+            "category": "Technic, Connector",
+            "visual": "Black Technic, Pin Connector Toggle Joint Smooth Double with Axle and Pin Holes"
+          },
+          {
+            "id": "49283",
+            "name": "Blue Technic, Axle and Wire Connector",
+            "colorId": 7,
+            "category": "Technic, Connector",
+            "visual": "Blue Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "10197",
+            "name": "Dark Bluish Gray Technic, Axle and Pin Connector Hub with 2 Perpendicular Axles",
+            "colorId": 85,
+            "category": "Technic, Connector",
+            "visual": "Dark Bluish Gray Technic, Axle and Pin Connector Hub with 2 Perpendicular Axles"
+          },
+          {
+            "id": "42003",
+            "name": "Dark Bluish Gray Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+            "colorId": 85,
+            "category": "Technic, Connector",
+            "visual": "Dark Bluish Gray Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes"
+          },
+          {
+            "id": "10288",
+            "name": "Dark Brown Technic, Axle and Pin Connector Angled Triple - 120 degrees",
+            "colorId": 120,
+            "category": "Technic, Connector",
+            "visual": "Dark Brown Technic, Axle and Pin Connector Angled Triple - 120 degrees"
+          },
+          {
+            "id": "49283",
+            "name": "Green Technic, Axle and Wire Connector",
+            "colorId": 6,
+            "category": "Technic, Connector",
+            "visual": "Green Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "32013",
+            "name": "Light Bluish Gray Technic, Axle and Pin Connector Angled #1",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Axle and Pin Connector Angled #1"
+          },
+          {
+            "id": "6536",
+            "name": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular"
+          },
+          {
+            "id": "98989",
+            "name": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular Double 4L",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular Double 4L"
+          },
+          {
+            "id": "63869",
+            "name": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular Triple",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Axle and Pin Connector Perpendicular Triple"
+          },
+          {
+            "id": "57585",
+            "name": "Light Bluish Gray Technic, Axle Connector Hub with 3 Axles",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Axle Connector Hub with 3 Axles"
+          },
+          {
+            "id": "55615",
+            "name": "Light Bluish Gray Technic, Pin Connector Perpendicular 3 x 3 Bent with 4 Pins",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Pin Connector Perpendicular 3 x 3 Bent with 4 Pins"
+          },
+          {
+            "id": "48989",
+            "name": "Light Bluish Gray Technic, Pin Connector Perpendicular 3L with 4 Pins",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Pin Connector Perpendicular 3L with 4 Pins"
+          },
+          {
+            "id": "32557",
+            "name": "Light Bluish Gray Technic, Pin Connector Perpendicular Double 3L",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Pin Connector Perpendicular Double 3L"
+          },
+          {
+            "id": "62462",
+            "name": "Light Bluish Gray Technic, Pin Connector Round 2L with Slot (Pin Joiner Round)",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Pin Connector Round 2L with Slot (Pin Joiner Round)"
+          },
+          {
+            "id": "62520c01",
+            "name": "Light Bluish Gray Technic, Universal Joint 3L",
+            "colorId": 86,
+            "category": "Technic, Connector",
+            "visual": "Light Bluish Gray Technic, Universal Joint 3L"
+          },
+          {
+            "id": "49283",
+            "name": "Magenta Technic, Axle and Wire Connector",
+            "colorId": 71,
+            "category": "Technic, Connector",
+            "visual": "Magenta Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "39793",
+            "name": "Magenta Technic, Pin Connector Block, Liftarm 1 x 3 x 3",
+            "colorId": 71,
+            "category": "Technic, Connector",
+            "visual": "Magenta Technic, Pin Connector Block, Liftarm 1 x 3 x 3"
+          },
+          {
+            "id": "32016",
+            "name": "Medium Azure Technic, Axle and Pin Connector Angled #3 - 157.5 degrees",
+            "colorId": 156,
+            "category": "Technic, Connector",
+            "visual": "Medium Azure Technic, Axle and Pin Connector Angled #3 - 157.5 degrees"
+          },
+          {
+            "id": "49283",
+            "name": "Medium Azure Technic, Axle and Wire Connector",
+            "colorId": 156,
+            "category": "Technic, Connector",
+            "visual": "Medium Azure Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "42003",
+            "name": "Red Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+            "colorId": 5,
+            "category": "Technic, Connector",
+            "visual": "Red Technic, Axle and Pin Connector Perpendicular 3L with 2 Pin Holes"
+          },
+          {
+            "id": "41678",
+            "name": "Red Technic, Axle and Pin Connector Perpendicular Double Split",
+            "colorId": 5,
+            "category": "Technic, Connector",
+            "visual": "Red Technic, Axle and Pin Connector Perpendicular Double Split"
+          },
+          {
+            "id": "49283",
+            "name": "Red Technic, Axle and Wire Connector",
+            "colorId": 5,
+            "category": "Technic, Connector",
+            "visual": "Red Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "6538c",
+            "name": "Red Technic, Axle Connector 2L (Smooth with x Hole + Orientation)",
+            "colorId": 5,
+            "category": "Technic, Connector",
+            "visual": "Red Technic, Axle Connector 2L (Smooth with x Hole + Orientation)"
+          },
+          {
+            "id": "44809",
+            "name": "Red Technic, Pin Connector Perpendicular 2 x 2 Bent",
+            "colorId": 5,
+            "category": "Technic, Connector",
+            "visual": "Red Technic, Pin Connector Perpendicular 2 x 2 Bent"
+          },
+          {
+            "id": "6538b",
+            "name": "Tan Technic, Axle Connector 2L (Ridged with x Hole x Orientation)",
+            "colorId": 2,
+            "category": "Technic, Connector",
+            "visual": "Tan Technic, Axle Connector 2L (Ridged with x Hole x Orientation)"
+          },
+          {
+            "id": "98585",
+            "name": "Trans-Light Blue Technic, Axle Connector Block Round with 2 Pin Holes and 3 Axle Holes (Hero Factory Weapon Barrel)",
+            "colorId": 15,
+            "category": "Technic, Connector",
+            "visual": "Trans-Light Blue Technic, Axle Connector Block Round with 2 Pin Holes and 3 Axle Holes (Hero Factory Weapon Barrel)"
+          },
+          {
+            "id": "32192",
+            "name": "White Technic, Axle and Pin Connector Angled #4 - 135 degrees",
+            "colorId": 1,
+            "category": "Technic, Connector",
+            "visual": "White Technic, Axle and Pin Connector Angled #4 - 135 degrees"
+          },
+          {
+            "id": "22961",
+            "name": "White Technic, Axle and Pin Connector Hub with 1L Axle",
+            "colorId": 1,
+            "category": "Technic, Connector",
+            "visual": "White Technic, Axle and Pin Connector Hub with 1L Axle"
+          },
+          {
+            "id": "32184",
+            "name": "White Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole",
+            "colorId": 1,
+            "category": "Technic, Connector",
+            "visual": "White Technic, Axle and Pin Connector Perpendicular 3L with Center Pin Hole"
+          },
+          {
+            "id": "6538c",
+            "name": "White Technic, Axle Connector 2L (Smooth with x Hole + Orientation)",
+            "colorId": 1,
+            "category": "Technic, Connector",
+            "visual": "White Technic, Axle Connector 2L (Smooth with x Hole + Orientation)"
+          },
+          {
+            "id": "32014",
+            "name": "Yellow Technic, Axle and Pin Connector Angled #6 - 90 degrees",
+            "colorId": 3,
+            "category": "Technic, Connector",
+            "visual": "Yellow Technic, Axle and Pin Connector Angled #6 - 90 degrees"
+          },
+          {
+            "id": "49283",
+            "name": "Yellow Technic, Axle and Wire Connector",
+            "colorId": 3,
+            "category": "Technic, Connector",
+            "visual": "Yellow Technic, Axle and Wire Connector"
+          },
+          {
+            "id": "62462",
+            "name": "Yellow Technic, Pin Connector Round 2L with Slot (Pin Joiner Round)",
+            "colorId": 3,
+            "category": "Technic, Connector",
+            "visual": "Yellow Technic, Pin Connector Round 2L with Slot (Pin Joiner Round)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_25",
+    "title": "Technic, Gear",
+    "description": "Parts in category Technic, Gear",
+    "subcategories": [
+      {
+        "title": "Technic, Gear",
+        "parts": [
+          {
+            "id": "32270",
+            "name": "Black Technic, Gear 12 Tooth Double Bevel",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear 12 Tooth Double Bevel"
+          },
+          {
+            "id": "32269",
+            "name": "Black Technic, Gear 20 Tooth Double Bevel",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear 20 Tooth Double Bevel"
+          },
+          {
+            "id": "32498",
+            "name": "Black Technic, Gear 36 Tooth Double Bevel",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear 36 Tooth Double Bevel"
+          },
+          {
+            "id": "32072",
+            "name": "Black Technic, Gear Knob Cog Wheel with Axle Hole (+ Orientation)",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear Knob Cog Wheel with Axle Hole (+ Orientation)"
+          },
+          {
+            "id": "64781",
+            "name": "Black Technic, Gear Rack 1 x 13 with Axle and Pin Holes",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear Rack 1 x 13 with Axle and Pin Holes"
+          },
+          {
+            "id": "87761",
+            "name": "Black Technic, Gear Rack 1 x 7 with Axle and Pin Holes",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear Rack 1 x 7 with Axle and Pin Holes"
+          },
+          {
+            "id": "24121",
+            "name": "Black Technic, Gear Rack 11 x 11 Curved",
+            "colorId": 11,
+            "category": "Technic, Gear",
+            "visual": "Black Technic, Gear Rack 11 x 11 Curved"
+          },
+          {
+            "id": "35185",
+            "name": "Blue Technic, Gear 20 Tooth Double Bevel with Clutch on Both Sides",
+            "colorId": 7,
+            "category": "Technic, Gear",
+            "visual": "Blue Technic, Gear 20 Tooth Double Bevel with Clutch on Both Sides"
+          },
+          {
+            "id": "6542b",
+            "name": "Dark Bluish Gray Technic, Gear 16 Tooth with Clutch, Smooth",
+            "colorId": 85,
+            "category": "Technic, Gear",
+            "visual": "Dark Bluish Gray Technic, Gear 16 Tooth with Clutch, Smooth"
+          },
+          {
+            "id": "3648",
+            "name": "Dark Bluish Gray Technic, Gear 24 Tooth with 1 Axle Hole",
+            "colorId": 85,
+            "category": "Technic, Gear",
+            "visual": "Dark Bluish Gray Technic, Gear 24 Tooth with 1 Axle Hole"
+          },
+          {
+            "id": "10928",
+            "name": "Dark Bluish Gray Technic, Gear 8 Tooth with Dual Face",
+            "colorId": 85,
+            "category": "Technic, Gear",
+            "visual": "Dark Bluish Gray Technic, Gear 8 Tooth with Dual Face"
+          },
+          {
+            "id": "62821b",
+            "name": "Dark Bluish Gray Technic, Gear Differential 28 Tooth Bevel - Inner Tabs with Closed Center",
+            "colorId": 85,
+            "category": "Technic, Gear",
+            "visual": "Dark Bluish Gray Technic, Gear Differential 28 Tooth Bevel - Inner Tabs with Closed Center"
+          },
+          {
+            "id": "94925",
+            "name": "Light Bluish Gray Technic, Gear 16 Tooth - Axle Hole with Closed Sides",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear 16 Tooth - Axle Hole with Closed Sides"
+          },
+          {
+            "id": "87407",
+            "name": "Light Bluish Gray Technic, Gear 20 Tooth Bevel with Pin Hole",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear 20 Tooth Bevel with Pin Hole"
+          },
+          {
+            "id": "46372",
+            "name": "Light Bluish Gray Technic, Gear 28 Tooth Double Bevel",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear 28 Tooth Double Bevel"
+          },
+          {
+            "id": "3649",
+            "name": "Light Bluish Gray Technic, Gear 40 Tooth",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear 40 Tooth"
+          },
+          {
+            "id": "4716",
+            "name": "Light Bluish Gray Technic, Gear Worm Screw, Long",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear Worm Screw, Long"
+          },
+          {
+            "id": "32905",
+            "name": "Light Bluish Gray Technic, Gear Worm Screw, Long, Axle Opening Type II",
+            "colorId": 86,
+            "category": "Technic, Gear",
+            "visual": "Light Bluish Gray Technic, Gear Worm Screw, Long, Axle Opening Type II"
+          },
+          {
+            "id": "6589",
+            "name": "Tan Technic, Gear 12 Tooth Bevel",
+            "colorId": 2,
+            "category": "Technic, Gear",
+            "visual": "Tan Technic, Gear 12 Tooth Bevel"
+          },
+          {
+            "id": "32198",
+            "name": "Tan Technic, Gear 20 Tooth Bevel",
+            "colorId": 2,
+            "category": "Technic, Gear",
+            "visual": "Tan Technic, Gear 20 Tooth Bevel"
+          },
+          {
+            "id": "32269",
+            "name": "Tan Technic, Gear 20 Tooth Double Bevel",
+            "colorId": 2,
+            "category": "Technic, Gear",
+            "visual": "Tan Technic, Gear 20 Tooth Double Bevel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_26",
+    "title": "Technic, Liftarm",
+    "description": "Parts in category Technic, Liftarm",
+    "subcategories": [
+      {
+        "title": "Technic, Liftarm",
+        "parts": [
+          {
+            "id": "18654",
+            "name": "Black Technic, Liftarm Thick 1 x 1 (Spacer)",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thick 1 x 1 (Spacer)"
+          },
+          {
+            "id": "32278",
+            "name": "Black Technic, Liftarm Thick 1 x 15",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thick 1 x 15"
+          },
+          {
+            "id": "60483",
+            "name": "Black Technic, Liftarm Thick 1 x 2 - Axle Hole",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thick 1 x 2 - Axle Hole"
+          },
+          {
+            "id": "32523",
+            "name": "Black Technic, Liftarm Thick 1 x 3",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "40490",
+            "name": "Black Technic, Liftarm Thick 1 x 9",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thick 1 x 9"
+          },
+          {
+            "id": "41677",
+            "name": "Black Technic, Liftarm Thin 1 x 2 - Axle Holes",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thin 1 x 2 - Axle Holes"
+          },
+          {
+            "id": "32449",
+            "name": "Black Technic, Liftarm Thin 1 x 4 - Axle Holes",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thin 1 x 4 - Axle Holes"
+          },
+          {
+            "id": "11478",
+            "name": "Black Technic, Liftarm Thin 1 x 5 - Axle Holes",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm Thin 1 x 5 - Axle Holes"
+          },
+          {
+            "id": "32009",
+            "name": "Black Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double"
+          },
+          {
+            "id": "32348",
+            "name": "Black Technic, Liftarm, Modified Bent Thick 1 x 7 (4 - 4)",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified Bent Thick 1 x 7 (4 - 4)"
+          },
+          {
+            "id": "6629",
+            "name": "Black Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4)",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4)"
+          },
+          {
+            "id": "33299",
+            "name": "Black Technic, Liftarm, Modified Crank / Pin 1 x 3 - Axle Holes",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified Crank / Pin 1 x 3 - Axle Holes"
+          },
+          {
+            "id": "64179",
+            "name": "Black Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center"
+          },
+          {
+            "id": "60484",
+            "name": "Black Technic, Liftarm, Modified T-Shape Thick 3 x 3",
+            "colorId": 11,
+            "category": "Technic, Liftarm",
+            "visual": "Black Technic, Liftarm, Modified T-Shape Thick 3 x 3"
+          },
+          {
+            "id": "32523",
+            "name": "Blue Technic, Liftarm Thick 1 x 3",
+            "colorId": 7,
+            "category": "Technic, Liftarm",
+            "visual": "Blue Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32523",
+            "name": "Green Technic, Liftarm Thick 1 x 3",
+            "colorId": 6,
+            "category": "Technic, Liftarm",
+            "visual": "Green Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32525",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 11",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 11"
+          },
+          {
+            "id": "41239",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 13",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 13"
+          },
+          {
+            "id": "43857",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 2",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 2"
+          },
+          {
+            "id": "32523",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 3",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32316",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 5",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 5"
+          },
+          {
+            "id": "32524",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 7",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 7"
+          },
+          {
+            "id": "40490",
+            "name": "Light Bluish Gray Technic, Liftarm Thick 1 x 9",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thick 1 x 9"
+          },
+          {
+            "id": "41677",
+            "name": "Light Bluish Gray Technic, Liftarm Thin 1 x 2 - Axle Holes",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thin 1 x 2 - Axle Holes"
+          },
+          {
+            "id": "6632",
+            "name": "Light Bluish Gray Technic, Liftarm Thin 1 x 3 - Axle Holes",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm Thin 1 x 3 - Axle Holes"
+          },
+          {
+            "id": "32009",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double"
+          },
+          {
+            "id": "32271",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick 1 x 9 (7 - 3)",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick 1 x 9 (7 - 3)"
+          },
+          {
+            "id": "32140",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4"
+          },
+          {
+            "id": "32526",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5"
+          },
+          {
+            "id": "64178",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Frame Thick 5 x 11 Open Center",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Frame Thick 5 x 11 Open Center"
+          },
+          {
+            "id": "64179",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center"
+          },
+          {
+            "id": "14720",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified H-Shape Thick 3 x 5 Perpendicular",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified H-Shape Thick 3 x 5 Perpendicular"
+          },
+          {
+            "id": "99773",
+            "name": "Light Bluish Gray Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports",
+            "colorId": 86,
+            "category": "Technic, Liftarm",
+            "visual": "Light Bluish Gray Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports"
+          },
+          {
+            "id": "32525",
+            "name": "Magenta Technic, Liftarm Thick 1 x 11",
+            "colorId": 71,
+            "category": "Technic, Liftarm",
+            "visual": "Magenta Technic, Liftarm Thick 1 x 11"
+          },
+          {
+            "id": "32316",
+            "name": "Magenta Technic, Liftarm Thick 1 x 5",
+            "colorId": 71,
+            "category": "Technic, Liftarm",
+            "visual": "Magenta Technic, Liftarm Thick 1 x 5"
+          },
+          {
+            "id": "65817",
+            "name": "Magenta Technic, Liftarm, Modified Frame Thick 11 x 15 Grille Center (Maker Plate)",
+            "colorId": 71,
+            "category": "Technic, Liftarm",
+            "visual": "Magenta Technic, Liftarm, Modified Frame Thick 11 x 15 Grille Center (Maker Plate)"
+          },
+          {
+            "id": "39794",
+            "name": "Magenta Technic, Liftarm, Modified Frame Thick 7 x 11 Open Center",
+            "colorId": 71,
+            "category": "Technic, Liftarm",
+            "visual": "Magenta Technic, Liftarm, Modified Frame Thick 7 x 11 Open Center"
+          },
+          {
+            "id": "41239",
+            "name": "Medium Azure Technic, Liftarm Thick 1 x 13",
+            "colorId": 156,
+            "category": "Technic, Liftarm",
+            "visual": "Medium Azure Technic, Liftarm Thick 1 x 13"
+          },
+          {
+            "id": "60483",
+            "name": "Medium Azure Technic, Liftarm Thick 1 x 2 - Axle Hole",
+            "colorId": 156,
+            "category": "Technic, Liftarm",
+            "visual": "Medium Azure Technic, Liftarm Thick 1 x 2 - Axle Hole"
+          },
+          {
+            "id": "32524",
+            "name": "Medium Azure Technic, Liftarm Thick 1 x 7",
+            "colorId": 156,
+            "category": "Technic, Liftarm",
+            "visual": "Medium Azure Technic, Liftarm Thick 1 x 7"
+          },
+          {
+            "id": "32526",
+            "name": "Medium Azure Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5",
+            "colorId": 156,
+            "category": "Technic, Liftarm",
+            "visual": "Medium Azure Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5"
+          },
+          {
+            "id": "39790",
+            "name": "Medium Azure Technic, Liftarm, Modified Frame Thick 11 x 15 Open Center",
+            "colorId": 156,
+            "category": "Technic, Liftarm",
+            "visual": "Medium Azure Technic, Liftarm, Modified Frame Thick 11 x 15 Open Center"
+          },
+          {
+            "id": "32523",
+            "name": "Red Technic, Liftarm Thick 1 x 3",
+            "colorId": 5,
+            "category": "Technic, Liftarm",
+            "visual": "Red Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32140",
+            "name": "Red Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4",
+            "colorId": 5,
+            "category": "Technic, Liftarm",
+            "visual": "Red Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4"
+          },
+          {
+            "id": "32278",
+            "name": "White Technic, Liftarm Thick 1 x 15",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm Thick 1 x 15"
+          },
+          {
+            "id": "32523",
+            "name": "White Technic, Liftarm Thick 1 x 3",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32009",
+            "name": "White Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm, Modified Bent Thick 1 x 11.5 Double"
+          },
+          {
+            "id": "32348",
+            "name": "White Technic, Liftarm, Modified Bent Thick 1 x 7 (4 - 4)",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm, Modified Bent Thick 1 x 7 (4 - 4)"
+          },
+          {
+            "id": "6629",
+            "name": "White Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4)",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4)"
+          },
+          {
+            "id": "32526",
+            "name": "White Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5",
+            "colorId": 1,
+            "category": "Technic, Liftarm",
+            "visual": "White Technic, Liftarm, Modified Bent Thick L-Shape 3 x 5"
+          },
+          {
+            "id": "32523",
+            "name": "Yellow Technic, Liftarm Thick 1 x 3",
+            "colorId": 3,
+            "category": "Technic, Liftarm",
+            "visual": "Yellow Technic, Liftarm Thick 1 x 3"
+          },
+          {
+            "id": "32271",
+            "name": "Yellow Technic, Liftarm, Modified Bent Thick 1 x 9 (7 - 3)",
+            "colorId": 3,
+            "category": "Technic, Liftarm",
+            "visual": "Yellow Technic, Liftarm, Modified Bent Thick 1 x 9 (7 - 3)"
+          },
+          {
+            "id": "32140",
+            "name": "Yellow Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4",
+            "colorId": 3,
+            "category": "Technic, Liftarm",
+            "visual": "Yellow Technic, Liftarm, Modified Bent Thick L-Shape 2 x 4"
+          },
+          {
+            "id": "60484",
+            "name": "Yellow Technic, Liftarm, Modified T-Shape Thick 3 x 3",
+            "colorId": 3,
+            "category": "Technic, Liftarm",
+            "visual": "Yellow Technic, Liftarm, Modified T-Shape Thick 3 x 3"
+          },
+          {
+            "id": "99773",
+            "name": "Yellow Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports",
+            "colorId": 3,
+            "category": "Technic, Liftarm",
+            "visual": "Yellow Technic, Liftarm, Modified Triangle Thin 3 x 5 with Short Supports"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_27",
+    "title": "Technic, Link",
+    "description": "Parts in category Technic, Link",
+    "subcategories": [
+      {
+        "title": "Technic, Link",
+        "parts": [
+          {
+            "id": "2739a",
+            "name": "Black Technic, Link 1 x 6 without Stoppers",
+            "colorId": 11,
+            "category": "Technic, Link",
+            "visual": "Black Technic, Link 1 x 6 without Stoppers"
+          },
+          {
+            "id": "57518",
+            "name": "Black Technic, Link Tread Wide with 2 Pin Holes",
+            "colorId": 11,
+            "category": "Technic, Link",
+            "visual": "Black Technic, Link Tread Wide with 2 Pin Holes"
+          },
+          {
+            "id": "2739a",
+            "name": "Dark Bluish Gray Technic, Link 1 x 6 without Stoppers",
+            "colorId": 85,
+            "category": "Technic, Link",
+            "visual": "Dark Bluish Gray Technic, Link 1 x 6 without Stoppers"
+          },
+          {
+            "id": "14149",
+            "name": "Red Technic, Link Tread Attachment, Double, Rubber",
+            "colorId": 5,
+            "category": "Technic, Link",
+            "visual": "Red Technic, Link Tread Attachment, Double, Rubber"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_28",
+    "title": "Technic, Panel",
+    "description": "Parts in category Technic, Panel",
+    "subcategories": [
+      {
+        "title": "Technic, Panel",
+        "parts": [
+          {
+            "id": "11954",
+            "name": "Black Technic, Panel Curved 11 x 3 with 10 Pin Holes through Panel Surface",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Curved 11 x 3 with 10 Pin Holes through Panel Surface"
+          },
+          {
+            "id": "24119",
+            "name": "Black Technic, Panel Curved 7 x 3 with 2 Pin Holes through Panel Surface",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Curved 7 x 3 with 2 Pin Holes through Panel Surface"
+          },
           {
             "id": "87080",
-            "name": "Panel 3x11",
-            "visual": "長條形面板",
-            "colorId": 11
+            "name": "Black Technic, Panel Fairing # 1 Small Smooth Short, Side A",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 1 Small Smooth Short, Side A"
           },
           {
             "id": "87086",
-            "name": "Panel 5x11",
-            "visual": "大型面板",
-            "colorId": 11
+            "name": "Black Technic, Panel Fairing # 2 Small Smooth Short, Side B",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 2 Small Smooth Short, Side B"
           },
           {
             "id": "64683",
-            "name": "Panel 3x7",
-            "visual": "中型面板",
-            "colorId": 11
+            "name": "Black Technic, Panel Fairing # 3 Small Smooth Long, Side A",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 3 Small Smooth Long, Side A"
           },
           {
             "id": "64391",
-            "name": "Panel 3x5",
-            "visual": "小型面板",
-            "colorId": 11
+            "name": "Black Technic, Panel Fairing # 4 Small Smooth Long, Side B",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 4 Small Smooth Long, Side B"
+          },
+          {
+            "id": "64681",
+            "name": "Black Technic, Panel Fairing # 5 Long Smooth, Side A",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 5 Long Smooth, Side A"
+          },
+          {
+            "id": "64393",
+            "name": "Black Technic, Panel Fairing # 6 Long Smooth, Side B",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing # 6 Long Smooth, Side B"
+          },
+          {
+            "id": "64394",
+            "name": "Black Technic, Panel Fairing #13 Large Short Smooth, Side A",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing #13 Large Short Smooth, Side A"
+          },
+          {
+            "id": "64680",
+            "name": "Black Technic, Panel Fairing #14 Large Short Smooth, Side B",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing #14 Large Short Smooth, Side B"
+          },
+          {
+            "id": "64392",
+            "name": "Black Technic, Panel Fairing #17 Large Smooth, Side A",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing #17 Large Smooth, Side A"
+          },
+          {
+            "id": "64682",
+            "name": "Black Technic, Panel Fairing #18 Large Smooth, Side B",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Fairing #18 Large Smooth, Side B"
           },
           {
             "id": "15458",
-            "name": "Panel 3x11 彎曲",
-            "visual": "帶有弧度的面板",
-            "colorId": 11
+            "name": "Black Technic, Panel Plate 3 x 11 x 1",
+            "colorId": 11,
+            "category": "Technic, Panel",
+            "visual": "Black Technic, Panel Plate 3 x 11 x 1"
+          },
+          {
+            "id": "11954",
+            "name": "Medium Azure Technic, Panel Curved 11 x 3 with 10 Pin Holes through Panel Surface",
+            "colorId": 156,
+            "category": "Technic, Panel",
+            "visual": "Medium Azure Technic, Panel Curved 11 x 3 with 10 Pin Holes through Panel Surface"
+          },
+          {
+            "id": "11946",
+            "name": "Red Technic, Panel Fairing #21 Very Small Smooth, Side B",
+            "colorId": 5,
+            "category": "Technic, Panel",
+            "visual": "Red Technic, Panel Fairing #21 Very Small Smooth, Side B"
+          },
+          {
+            "id": "11947",
+            "name": "Red Technic, Panel Fairing #22 Very Small Smooth, Side A",
+            "colorId": 5,
+            "category": "Technic, Panel",
+            "visual": "Red Technic, Panel Fairing #22 Very Small Smooth, Side A"
+          },
+          {
+            "id": "39369",
+            "name": "Yellow Technic, Panel Plate 11 x 19 x 1",
+            "colorId": 3,
+            "category": "Technic, Panel",
+            "visual": "Yellow Technic, Panel Plate 11 x 19 x 1"
           }
         ]
       }
     ]
   },
   {
-    "id": "power",
-    "title": "7. 電子與動力模組 (Power Systems)",
-    "description": "適用於 SPIKE / Mindstorms / Power Functions",
+    "id": "cat_29",
+    "title": "Technic, Pin",
+    "description": "Parts in category Technic, Pin",
     "subcategories": [
       {
-        "title": "馬達與主機",
-        "description": "注意：此處使用零件編號而非套裝編號以確保圖片顯示。",
+        "title": "Technic, Pin",
         "parts": [
           {
-            "id": "88013",
-            "name": "L 馬達 (Powered Up)",
-            "visual": "SPIKE/Robot Inventor 常用",
-            "colorId": 85,
-            "elementId": "6214085"
+            "id": "32138",
+            "name": "Black Technic, Pin Double with Axle Hole",
+            "colorId": 11,
+            "category": "Technic, Pin",
+            "visual": "Black Technic, Pin Double with Axle Hole"
           },
           {
-            "id": "88008",
-            "name": "M 馬達 (Powered Up)",
-            "visual": "SPIKE/Robot Inventor 常用",
-            "colorId": 85,
-            "elementId": "6214082"
+            "id": "6628",
+            "name": "Black Technic, Pin with Friction Ridges and Tow Ball (Undetermined Type)",
+            "colorId": 11,
+            "category": "Technic, Pin",
+            "visual": "Black Technic, Pin with Friction Ridges and Tow Ball (Undetermined Type)"
           },
           {
-            "id": "53444",
-            "name": "SPIKE Prime Hub",
-            "visual": "黃色大型主機",
-            "colorId": 3,
-            "elementId": "6270426",
-            "customImage": "https://static.bricklink.com/renovate/img/catalog-sets.png"
+            "id": "2780",
+            "name": "Black Technic, Pin with Short Friction Ridges",
+            "colorId": 11,
+            "category": "Technic, Pin",
+            "visual": "Black Technic, Pin with Short Friction Ridges"
           },
           {
-            "id": "61481",
-            "name": "顏色感測器 (SPIKE)",
-            "visual": "辨識顏色",
-            "colorId": 85,
-            "elementId": "6275903"
+            "id": "4274",
+            "name": "Blue Technic, Pin 1/2 without Friction Ridges",
+            "colorId": 7,
+            "category": "Technic, Pin",
+            "visual": "Blue Technic, Pin 1/2 without Friction Ridges"
           },
           {
-            "id": "37312",
-            "name": "距離感測器 (SPIKE)",
-            "visual": "眼睛造型",
-            "colorId": 85,
-            "elementId": "6275901"
+            "id": "6558",
+            "name": "Blue Technic, Pin 3L with Friction Ridges",
+            "colorId": 7,
+            "category": "Technic, Pin",
+            "visual": "Blue Technic, Pin 3L with Friction Ridges"
           },
           {
-            "id": "8883",
-            "name": "PF M 馬達",
-            "visual": "Power Functions 中型馬達",
+            "id": "87082",
+            "name": "Light Bluish Gray Technic, Pin 3L with Friction Ridges and Center Pin Hole",
             "colorId": 86,
-            "elementId": "4506083"
+            "category": "Technic, Pin",
+            "visual": "Light Bluish Gray Technic, Pin 3L with Friction Ridges and Center Pin Hole"
           },
           {
-            "id": "88003",
-            "name": "PF L 馬達",
-            "visual": "Power Functions 大型馬達",
+            "id": "32054",
+            "name": "Light Bluish Gray Technic, Pin 3L with Friction Ridges and Stop Bush",
             "colorId": 86,
-            "elementId": "6000564"
+            "category": "Technic, Pin",
+            "visual": "Light Bluish Gray Technic, Pin 3L with Friction Ridges and Stop Bush"
           },
           {
-            "id": "8882",
-            "name": "PF XL 馬達",
-            "visual": "Power Functions 超大扭力馬達",
+            "id": "3673",
+            "name": "Light Bluish Gray Technic, Pin without Friction Ridges",
             "colorId": 86,
-            "elementId": "4506081"
+            "category": "Technic, Pin",
+            "visual": "Light Bluish Gray Technic, Pin without Friction Ridges"
           },
           {
-            "id": "8881",
-            "name": "PF 電池盒",
-            "visual": "AA 電池盒",
+            "id": "32054",
+            "name": "Red Technic, Pin 3L with Friction Ridges and Stop Bush",
+            "colorId": 5,
+            "category": "Technic, Pin",
+            "visual": "Red Technic, Pin 3L with Friction Ridges and Stop Bush"
+          },
+          {
+            "id": "32002",
+            "name": "Tan Technic, Pin 3/4",
+            "colorId": 2,
+            "category": "Technic, Pin",
+            "visual": "Tan Technic, Pin 3/4"
+          },
+          {
+            "id": "32556",
+            "name": "Tan Technic, Pin 3L without Friction Ridges",
+            "colorId": 2,
+            "category": "Technic, Pin",
+            "visual": "Tan Technic, Pin 3L without Friction Ridges"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_30",
+    "title": "Technic, Plate",
+    "description": "Parts in category Technic, Plate",
+    "subcategories": [
+      {
+        "title": "Technic, Plate",
+        "parts": [
+          {
+            "id": "3738",
+            "name": "Black Technic, Plate 2 x 8 with 7 Holes",
+            "colorId": 11,
+            "category": "Technic, Plate",
+            "visual": "Black Technic, Plate 2 x 8 with 7 Holes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_31",
+    "title": "Technic, Steering",
+    "description": "Parts in category Technic, Steering",
+    "subcategories": [
+      {
+        "title": "Technic, Steering",
+        "parts": [
+          {
+            "id": "92911",
+            "name": "Dark Bluish Gray Technic, Steering Ball Joint Large Receptacle",
+            "colorId": 85,
+            "category": "Technic, Steering",
+            "visual": "Dark Bluish Gray Technic, Steering Ball Joint Large Receptacle"
+          },
+          {
+            "id": "92906",
+            "name": "Dark Bluish Gray Technic, Steering CV Joint Narrow with 2L Axle",
+            "colorId": 85,
+            "category": "Technic, Steering",
+            "visual": "Dark Bluish Gray Technic, Steering CV Joint Narrow with 2L Axle"
+          },
+          {
+            "id": "92909",
+            "name": "Dark Bluish Gray Technic, Steering, Wheel Hub 3 Pins Round",
+            "colorId": 85,
+            "category": "Technic, Steering",
+            "visual": "Dark Bluish Gray Technic, Steering, Wheel Hub 3 Pins Round"
+          },
+          {
+            "id": "92910",
+            "name": "Light Bluish Gray Technic, Steering Ball Joint Large Open with C-Shape Pivot Frame",
             "colorId": 86,
-            "elementId": "4506078"
+            "category": "Technic, Steering",
+            "visual": "Light Bluish Gray Technic, Steering Ball Joint Large Open with C-Shape Pivot Frame"
+          },
+          {
+            "id": "32494",
+            "name": "Light Bluish Gray Technic, Steering CV Joint",
+            "colorId": 86,
+            "category": "Technic, Steering",
+            "visual": "Light Bluish Gray Technic, Steering CV Joint"
+          },
+          {
+            "id": "92908",
+            "name": "Light Bluish Gray Technic, Steering Portal Axle, Housing",
+            "colorId": 86,
+            "category": "Technic, Steering",
+            "visual": "Light Bluish Gray Technic, Steering Portal Axle, Housing"
+          },
+          {
+            "id": "92908c01",
+            "name": "Light Bluish Gray Technic, Steering Portal Axle, Housing with Dark Bluish Gray Wheel Hub 3 Pins Round (92908 / 92909)",
+            "colorId": 86,
+            "category": "Technic, Steering",
+            "visual": "Light Bluish Gray Technic, Steering Portal Axle, Housing with Dark Bluish Gray Wheel Hub 3 Pins Round (92908 / 92909)"
+          },
+          {
+            "id": "39370",
+            "name": "Medium Azure Technic, Steering Ball Joint Large Receptacle with H-Shape Perpendicular Thick Liftarm",
+            "colorId": 156,
+            "category": "Technic, Steering",
+            "visual": "Medium Azure Technic, Steering Ball Joint Large Receptacle with H-Shape Perpendicular Thick Liftarm"
+          },
+          {
+            "id": "39370c01",
+            "name": "Medium Azure Technic, Steering Ball Joint Large Receptacle with H-Shape Perpendicular Thick Liftarm with White Wheel Ball, Hard Plastic 19mm D. (39370 / 52629)",
+            "colorId": 156,
+            "category": "Technic, Steering",
+            "visual": "Medium Azure Technic, Steering Ball Joint Large Receptacle with H-Shape Perpendicular Thick Liftarm with White Wheel Ball, Hard Plastic 19mm D. (39370 / 52629)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_32",
+    "title": "Tile, Round",
+    "description": "Parts in category Tile, Round",
+    "subcategories": [
+      {
+        "title": "Tile, Round",
+        "parts": [
+          {
+            "id": "15535",
+            "name": "Black Tile, Round 2 x 2 with Hole",
+            "colorId": 11,
+            "category": "Tile, Round",
+            "visual": "Black Tile, Round 2 x 2 with Hole"
+          },
+          {
+            "id": "18674",
+            "name": "Medium Azure Tile, Round 2 x 2 with Open Stud",
+            "colorId": 156,
+            "category": "Tile, Round",
+            "visual": "Medium Azure Tile, Round 2 x 2 with Open Stud"
+          },
+          {
+            "id": "15535",
+            "name": "Red Tile, Round 2 x 2 with Hole",
+            "colorId": 5,
+            "category": "Tile, Round",
+            "visual": "Red Tile, Round 2 x 2 with Hole"
+          },
+          {
+            "id": "98138",
+            "name": "Trans-Red Tile, Round 1 x 1",
+            "colorId": 17,
+            "category": "Tile, Round",
+            "visual": "Trans-Red Tile, Round 1 x 1"
+          },
+          {
+            "id": "18674",
+            "name": "White Tile, Round 2 x 2 with Open Stud",
+            "colorId": 1,
+            "category": "Tile, Round",
+            "visual": "White Tile, Round 2 x 2 with Open Stud"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_33",
+    "title": "Tile, Round, Decorated",
+    "description": "Parts in category Tile, Round, Decorated",
+    "subcategories": [
+      {
+        "title": "Tile, Round, Decorated",
+        "parts": [
+          {
+            "id": "98138pb074",
+            "name": "Black Tile, Round 1 x 1 with Large White Circle / Eye Pupil Offset Pattern",
+            "colorId": 11,
+            "category": "Tile, Round, Decorated",
+            "visual": "Black Tile, Round 1 x 1 with Large White Circle / Eye Pupil Offset Pattern"
+          },
+          {
+            "id": "98138pb066",
+            "name": "White Tile, Round 1 x 1 with Black Eye Squinting with Pupil in Corner Pattern",
+            "colorId": 1,
+            "category": "Tile, Round, Decorated",
+            "visual": "White Tile, Round 1 x 1 with Black Eye Squinting with Pupil in Corner Pattern"
+          },
+          {
+            "id": "14769pb209",
+            "name": "White Tile, Round 2 x 2 with Bottom Stud Holder with Spiral Black Pattern",
+            "colorId": 1,
+            "category": "Tile, Round, Decorated",
+            "visual": "White Tile, Round 2 x 2 with Bottom Stud Holder with Spiral Black Pattern"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_34",
+    "title": "Wedge",
+    "description": "Parts in category Wedge",
+    "subcategories": [
+      {
+        "title": "Wedge",
+        "parts": [
+          {
+            "id": "41750",
+            "name": "Medium Azure Wedge 8 x 3 x 2 Open Left",
+            "colorId": 156,
+            "category": "Wedge",
+            "visual": "Medium Azure Wedge 8 x 3 x 2 Open Left"
+          },
+          {
+            "id": "41749",
+            "name": "Medium Azure Wedge 8 x 3 x 2 Open Right",
+            "colorId": 156,
+            "category": "Wedge",
+            "visual": "Medium Azure Wedge 8 x 3 x 2 Open Right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_35",
+    "title": "Wheel",
+    "description": "Parts in category Wheel",
+    "subcategories": [
+      {
+        "title": "Wheel",
+        "parts": [
+          {
+            "id": "57519",
+            "name": "Black Technic Tread Sprocket Wheel Large",
+            "colorId": 11,
+            "category": "Wheel",
+            "visual": "Black Technic Tread Sprocket Wheel Large"
+          },
+          {
+            "id": "4185",
+            "name": "Black Technic Wedge Belt Wheel (Pulley)",
+            "colorId": 11,
+            "category": "Wheel",
+            "visual": "Black Technic Wedge Belt Wheel (Pulley)"
+          },
+          {
+            "id": "39367pb01",
+            "name": "Black Wheel 56 x 14 Technic with Axle Hole and 8 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern",
+            "colorId": 11,
+            "category": "Wheel",
+            "visual": "Black Wheel 56 x 14 Technic with Axle Hole and 8 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern"
+          },
+          {
+            "id": "49295pb01",
+            "name": "Black Wheel 88 x 14 Technic with Axle Hole and 28 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern",
+            "colorId": 11,
+            "category": "Wheel",
+            "visual": "Black Wheel 88 x 14 Technic with Axle Hole and 28 Pin Holes with Molded Medium Azure Hard Rubber Tire Pattern"
+          },
+          {
+            "id": "4185",
+            "name": "Dark Bluish Gray Technic Wedge Belt Wheel (Pulley)",
+            "colorId": 85,
+            "category": "Wheel",
+            "visual": "Dark Bluish Gray Technic Wedge Belt Wheel (Pulley)"
+          },
+          {
+            "id": "42610",
+            "name": "Light Bluish Gray Wheel 11mm D. x 8mm with Center Groove, 4 Spokes",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 11mm D. x 8mm with Center Groove, 4 Spokes"
+          },
+          {
+            "id": "13971",
+            "name": "Light Bluish Gray Wheel 18mm D. x  8mm with Fake Bolts and Deep Spokes with Inner Ring",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 18mm D. x  8mm with Fake Bolts and Deep Spokes with Inner Ring"
+          },
+          {
+            "id": "56902",
+            "name": "Light Bluish Gray Wheel 18mm D. x  8mm with Fake Bolts and Shallow Spokes",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 18mm D. x  8mm with Fake Bolts and Shallow Spokes"
+          },
+          {
+            "id": "55982",
+            "name": "Light Bluish Gray Wheel 18mm D. x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 18mm D. x 14mm with Axle Hole, Fake Bolts and Shallow Spokes"
+          },
+          {
+            "id": "56145",
+            "name": "Light Bluish Gray Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim"
+          },
+          {
+            "id": "56908",
+            "name": "Light Bluish Gray Wheel 43.2mm D. x 26mm Technic Racing Small, 6 Pin Holes",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 43.2mm D. x 26mm Technic Racing Small, 6 Pin Holes"
+          },
+          {
+            "id": "15038",
+            "name": "Light Bluish Gray Wheel 56mm D. x 34mm Technic Racing Medium, 6 Pin Holes",
+            "colorId": 86,
+            "category": "Wheel",
+            "visual": "Light Bluish Gray Wheel 56mm D. x 34mm Technic Racing Medium, 6 Pin Holes"
+          },
+          {
+            "id": "56903",
+            "name": "White Wheel 18mm D. x 8mm with Fake Bolts and Shallow Spokes and Axle Hole",
+            "colorId": 1,
+            "category": "Wheel",
+            "visual": "White Wheel 18mm D. x 8mm with Fake Bolts and Shallow Spokes and Axle Hole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_36",
+    "title": "Wheel & Tire Assembly",
+    "description": "Parts in category Wheel & Tire Assembly",
+    "subcategories": [
+      {
+        "title": "Wheel & Tire Assembly",
+        "parts": [
+          {
+            "id": "4185c01",
+            "name": "Black Technic Wedge Belt Wheel (Pulley) with Black Technic Wedge Belt Wheel Tire (4185 / 2815)",
+            "colorId": 11,
+            "category": "Wheel & Tire Assembly",
+            "visual": "Black Technic Wedge Belt Wheel (Pulley) with Black Technic Wedge Belt Wheel Tire (4185 / 2815)"
+          },
+          {
+            "id": "15038c04",
+            "name": "Light Bluish Gray Wheel 56mm D. x 34mm Technic Racing Medium, 6 Pin Holes with Black Tire 68.8 x 36 ZR (15038 / 44771)",
+            "colorId": 86,
+            "category": "Wheel & Tire Assembly",
+            "visual": "Light Bluish Gray Wheel 56mm D. x 34mm Technic Racing Medium, 6 Pin Holes with Black Tire 68.8 x 36 ZR (15038 / 44771)"
+          },
+          {
+            "id": "56903c01",
+            "name": "White Wheel 18mm D. x 8mm with Fake Bolts and Shallow Spokes and Axle Hole with Black Tire 24mm D. x 7mm Offset Tread - Band Around Center of Tread (56903 / 61254)",
+            "colorId": 1,
+            "category": "Wheel & Tire Assembly",
+            "visual": "White Wheel 18mm D. x 8mm with Fake Bolts and Shallow Spokes and Axle Hole with Black Tire 24mm D. x 7mm Offset Tread - Band Around Center of Tread (56903 / 61254)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_37",
+    "title": "Wheel, Tire & Tread",
+    "description": "Parts in category Wheel, Tire & Tread",
+    "subcategories": [
+      {
+        "title": "Wheel, Tire & Tread",
+        "parts": [
+          {
+            "id": "89201",
+            "name": "Black Tire 24 x 14 Shallow Tread, Band Around Center of Tread",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire 24 x 14 Shallow Tread, Band Around Center of Tread"
+          },
+          {
+            "id": "61254",
+            "name": "Black Tire 24mm D. x 7mm Offset Tread - Band Around Center of Tread",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire 24mm D. x 7mm Offset Tread - Band Around Center of Tread"
+          },
+          {
+            "id": "44309",
+            "name": "Black Tire 43.2 x 22 ZR",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire 43.2 x 22 ZR"
+          },
+          {
+            "id": "41897",
+            "name": "Black Tire 56 x 28 ZR Street",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire 56 x 28 ZR Street"
+          },
+          {
+            "id": "44771",
+            "name": "Black Tire 68.8 x 36 ZR",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire 68.8 x 36 ZR"
+          },
+          {
+            "id": "2815",
+            "name": "Black Tire Technic Wedge Belt Wheel",
+            "colorId": 11,
+            "category": "Wheel, Tire & Tread",
+            "visual": "Black Tire Technic Wedge Belt Wheel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cat_38",
+    "title": "Windscreen",
+    "description": "Parts in category Windscreen",
+    "subcategories": [
+      {
+        "title": "Windscreen",
+        "parts": [
+          {
+            "id": "x224",
+            "name": "Medium Azure Windscreen 8 x 6 x 2 Curved Sloped Sides",
+            "colorId": 156,
+            "category": "Windscreen",
+            "visual": "Medium Azure Windscreen 8 x 6 x 2 Curved Sloped Sides"
           }
         ]
       }
