@@ -213,6 +213,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="part-visual">${part.visual}</div>
           `;
 
+                    // Conditionally add Move Button if Admin
+                    const adminToken = localStorage.getItem('adminToken');
+                    if (adminToken) {
+                        const moveBtn = document.createElement('button');
+                        moveBtn.className = 'move-btn';
+                        moveBtn.textContent = '移動分類';
+                        moveBtn.style.cssText = "margin-top: 0.5rem; padding: 0.3rem 0.8rem; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem;";
+                        moveBtn.onclick = () => openMoveModal(part.id);
+                        card.appendChild(moveBtn);
+                    }
+
                     // Prepend image container
                     card.insertBefore(imgContainer, card.firstChild);
 
@@ -236,4 +247,137 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', (e) => {
         renderParts(e.target.value.toLowerCase());
     });
+
+    // --- Move Category Logic ---
+    const modal = document.getElementById('move-modal');
+    const closeBtn = document.querySelector('.close-modal');
+    const categorySelect = document.getElementById('new-category');
+    const subcategorySelect = document.getElementById('new-subcategory');
+    const saveMoveBtn = document.getElementById('save-move-btn');
+    let currentMovingPartId = null;
+
+    window.openMoveModal = (partId) => {
+        currentMovingPartId = partId;
+        const part = findPart(partId);
+        if (!part) return;
+
+        document.getElementById('move-part-name').textContent = `正在移動: ${part.name} (${part.id})`;
+
+        // Populate Categories
+        categorySelect.innerHTML = '';
+        partsData.forEach(cat => {
+            const option = document.createElement('option');
+            option.value = cat.id;
+            option.textContent = cat.title;
+            categorySelect.appendChild(option);
+        });
+
+        // Trigger subcategory population
+        populateSubcategories();
+
+        modal.style.display = 'block';
+    };
+
+    categorySelect.addEventListener('change', populateSubcategories);
+
+    function populateSubcategories() {
+        const catId = categorySelect.value;
+        const category = partsData.find(c => c.id === catId);
+        subcategorySelect.innerHTML = '';
+
+        if (category) {
+            category.subcategories.forEach(sub => {
+                const option = document.createElement('option');
+                option.value = sub.title;
+                option.textContent = sub.title;
+                subcategorySelect.appendChild(option);
+            });
+        }
+    }
+
+    closeBtn.onclick = () => {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+
+    saveMoveBtn.onclick = () => {
+        if (!currentMovingPartId) return;
+
+        const newCatId = categorySelect.value;
+        const newSubTitle = subcategorySelect.value;
+
+        // 1. Find and Remove Part
+        let partObj = null;
+        let oldCatId = null;
+        let oldSubTitle = null;
+
+        for (const cat of partsData) {
+            for (const sub of cat.subcategories) {
+                const idx = sub.parts.findIndex(p => p.id === currentMovingPartId);
+                if (idx !== -1) {
+                    partObj = sub.parts[idx];
+                    sub.parts.splice(idx, 1);
+                    oldCatId = cat.id;
+                    oldSubTitle = sub.title;
+                    break;
+                }
+            }
+            if (partObj) break;
+        }
+
+        if (partObj) {
+            // 2. Add to New Category
+            const newCat = partsData.find(c => c.id === newCatId);
+            const newSub = newCat.subcategories.find(s => s.title === newSubTitle);
+
+            if (newSub) {
+                newSub.parts.push(partObj);
+
+                // 3. Save to Server
+                saveData(partsData);
+
+                // 4. Update UI
+                renderParts(searchInput.value.toLowerCase());
+                modal.style.display = 'none';
+                alert(`已將零件移動至: ${newCat.title} > ${newSub.title}`);
+            }
+        }
+    };
+
+    function findPart(id) {
+        for (const cat of partsData) {
+            for (const sub of cat.subcategories) {
+                const part = sub.parts.find(p => p.id === id);
+                if (part) return part;
+            }
+        }
+        return null;
+    }
+
+    function saveData(newData) {
+        const token = localStorage.getItem('adminToken');
+        fetch('/api/parts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify(newData),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (!data.success) {
+                    alert('儲存失敗！權限不足或伺服器錯誤。');
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('儲存發生錯誤！');
+            });
+    }
 });

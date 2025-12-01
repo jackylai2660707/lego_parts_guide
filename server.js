@@ -25,6 +25,13 @@ app.get('/api/parts', (req, res) => {
 
 // API: Save all parts (Admin)
 app.post('/api/parts', (req, res) => {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+
+    if (token !== 'fake-jwt-token-123') {
+        return res.status(401).json({ error: 'Unauthorized' });
+    }
+
     const newData = req.body;
     fs.writeFile(DATA_FILE, JSON.stringify(newData, null, 2), 'utf8', (err) => {
         if (err) {
