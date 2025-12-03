@@ -6,7 +6,7 @@ services:
     container_name: lego-parts-guide
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3001:3000"
     volumes:
       # 持久化數據目錄，這樣數據不會在容器重啟後丟失
       - ./data:/app/data
