@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderParts(filterText = '') {
         container.innerHTML = '';
 
-        partsData.forEach(category => {
+        partsData.forEach((category, catIndex) => {
             // 1. Category Filter Check
             if (currentCategoryFilter && category.id !== currentCategoryFilter) {
                 return;
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 categorySection.appendChild(desc);
             }
 
-            category.subcategories.forEach(sub => {
+            category.subcategories.forEach((sub, subIndex) => {
                 // Check if subcategory matches filter
                 const subMatches = sub.title.toLowerCase().includes(filterText) ||
                     sub.parts.some(p => p.name.toLowerCase().includes(filterText) || p.id.includes(filterText));
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const grid = document.createElement('div');
                 grid.className = 'parts-grid';
 
-                sub.parts.forEach(part => {
+                sub.parts.forEach((part, partIndex) => {
                     if (filterText &&
                         !part.name.toLowerCase().includes(filterText) &&
                         !part.id.includes(filterText) &&
@@ -213,15 +213,31 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="part-visual">${part.visual}</div>
           `;
 
-                    // Conditionally add Move Button if Admin
+                    // Conditionally add Buttons if Admin
                     const adminToken = localStorage.getItem('adminToken');
                     if (adminToken) {
+                        const btnContainer = document.createElement('div');
+                        btnContainer.style.display = 'flex';
+                        btnContainer.style.gap = '0.5rem';
+                        btnContainer.style.marginTop = '0.5rem';
+
+                        // Move Button
                         const moveBtn = document.createElement('button');
                         moveBtn.className = 'move-btn';
-                        moveBtn.textContent = '移動分類';
-                        moveBtn.style.cssText = "margin-top: 0.5rem; padding: 0.3rem 0.8rem; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem;";
+                        moveBtn.textContent = '移動';
+                        moveBtn.style.cssText = "padding: 0.3rem 0.6rem; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem;";
                         moveBtn.onclick = () => openMoveModal(part.id);
-                        card.appendChild(moveBtn);
+                        btnContainer.appendChild(moveBtn);
+
+                        // Edit Button
+                        const editBtn = document.createElement('button');
+                        editBtn.className = 'edit-btn';
+                        editBtn.textContent = '編輯';
+                        editBtn.style.marginLeft = '0'; // Reset margin
+                        editBtn.onclick = () => openEditModal(category.id, subIndex, partIndex);
+                        btnContainer.appendChild(editBtn);
+
+                        card.appendChild(btnContainer);
                     }
 
                     // Prepend image container
@@ -232,13 +248,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (grid.children.length > 0) {
                     subDiv.appendChild(grid);
+
+                    // Add Part Button (if admin)
+                    const adminToken = localStorage.getItem('adminToken');
+                    if (adminToken) {
+                        const addBtn = document.createElement('button');
+                        addBtn.className = 'add-part-btn';
+                        addBtn.textContent = '+ 新增零件';
+                        addBtn.style.marginTop = '1rem';
+                        addBtn.onclick = () => openEditModal(category.id, subIndex, -1);
+                        subDiv.appendChild(addBtn);
+                    }
+
+                    categorySection.appendChild(subDiv);
+                } else if (!category.description && categorySection.children.length > 1) {
                     categorySection.appendChild(subDiv);
                 }
             });
 
             if (categorySection.children.length > 2) {
-                container.appendChild(categorySection);
-            } else if (!category.description && categorySection.children.length > 1) {
                 container.appendChild(categorySection);
             }
         });
@@ -373,6 +401,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 if (!data.success) {
                     alert('儲存失敗！權限不足或伺服器錯誤。');
+                } else {
+                    // Refresh data and UI
+                    partsData = newData;
+                    renderParts(searchInput.value.toLowerCase());
                 }
             })
             .catch((error) => {
@@ -380,4 +412,87 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('儲存發生錯誤！');
             });
     }
+
+    // --- Edit/Add Part Logic ---
+    const editModal = document.getElementById('edit-modal');
+    const editForm = document.getElementById('edit-form');
+    const deletePartBtn = document.getElementById('delete-part-btn');
+    let currentEditTarget = null; // { categoryId, subIndex, partIndex }
+
+    // Close buttons for both modals
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.onclick = () => {
+            modal.style.display = 'none';
+            editModal.style.display = 'none';
+        };
+    });
+
+    window.onclick = (event) => {
+        if (event.target == modal) modal.style.display = 'none';
+        if (event.target == editModal) editModal.style.display = 'none';
+    };
+
+    function openEditModal(categoryId, subIndex, partIndex) {
+        currentEditTarget = { categoryId, subIndex, partIndex };
+        const category = partsData.find(c => c.id === categoryId);
+        const sub = category.subcategories[subIndex];
+
+        if (partIndex >= 0) {
+            // Edit Mode
+            const part = sub.parts[partIndex];
+            document.getElementById('edit-modal-title').textContent = '編輯零件';
+            document.getElementById('part-id').value = part.id;
+            document.getElementById('part-name').value = part.name;
+            document.getElementById('part-visual').value = part.visual || '';
+            document.getElementById('part-color').value = part.colorId || 86;
+            document.getElementById('part-element').value = part.elementId || '';
+            document.getElementById('part-custom-image').value = part.customImage || '';
+            deletePartBtn.style.display = 'block';
+        } else {
+            // Add Mode
+            document.getElementById('edit-modal-title').textContent = '新增零件';
+            editForm.reset();
+            document.getElementById('part-color').value = 86;
+            deletePartBtn.style.display = 'none';
+        }
+
+        editModal.style.display = 'block';
+    }
+
+    editForm.onsubmit = (e) => {
+        e.preventDefault();
+        const { categoryId, subIndex, partIndex } = currentEditTarget;
+        const category = partsData.find(c => c.id === categoryId);
+        const sub = category.subcategories[subIndex];
+
+        const newPart = {
+            id: document.getElementById('part-id').value,
+            name: document.getElementById('part-name').value,
+            visual: document.getElementById('part-visual').value,
+            colorId: parseInt(document.getElementById('part-color').value),
+            elementId: document.getElementById('part-element').value || undefined,
+            customImage: document.getElementById('part-custom-image').value || undefined
+        };
+
+        if (partIndex >= 0) {
+            sub.parts[partIndex] = newPart;
+        } else {
+            sub.parts.push(newPart);
+        }
+
+        saveData(partsData);
+        editModal.style.display = 'none';
+    };
+
+    deletePartBtn.onclick = () => {
+        if (!confirm('確定要刪除此零件嗎？')) return;
+
+        const { categoryId, subIndex, partIndex } = currentEditTarget;
+        if (partIndex >= 0) {
+            const category = partsData.find(c => c.id === categoryId);
+            category.subcategories[subIndex].parts.splice(partIndex, 1);
+            saveData(partsData);
+            editModal.style.display = 'none';
+        }
+    };
 });
