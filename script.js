@@ -66,11 +66,25 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             navContainer.appendChild(btn);
         });
+
+        // Add "Add Category" button to nav if admin
+        const adminToken = localStorage.getItem('adminToken');
+        if (adminToken) {
+            const addCatBtn = document.createElement('button');
+            addCatBtn.className = 'nav-btn';
+            addCatBtn.textContent = '+ 新增主分類';
+            addCatBtn.style.border = '2px dashed #ccc';
+            // Wait for functions to be defined or define them before
+            // Since functions are hoisted or defined on window, this is fine
+            addCatBtn.onclick = () => openCategoryModal('add');
+            navContainer.appendChild(addCatBtn);
+        }
     }
 
     // --- Rendering Logic ---
     function renderParts(filterText = '') {
         container.innerHTML = '';
+        const adminToken = localStorage.getItem('adminToken');
 
         partsData.forEach((category, catIndex) => {
             // 1. Category Filter Check
@@ -102,6 +116,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 categorySection.appendChild(desc);
             }
 
+            // Admin: Edit Category Name & Delete Category & Add Subcategory
+            if (adminToken) {
+                const catMgmtDiv = document.createElement('div');
+                catMgmtDiv.style.marginBottom = '1rem';
+
+                const editCatBtn = document.createElement('button');
+                editCatBtn.className = 'mgmt-btn';
+                editCatBtn.textContent = '編輯分類名稱';
+                editCatBtn.onclick = () => editCategoryName(category.id);
+                catMgmtDiv.appendChild(editCatBtn);
+
+                const delCatBtn = document.createElement('button');
+                delCatBtn.className = 'mgmt-btn';
+                delCatBtn.textContent = '刪除分類';
+                delCatBtn.style.color = 'red';
+                delCatBtn.onclick = () => deleteCategory(category.id);
+                catMgmtDiv.appendChild(delCatBtn);
+
+                const addSubBtn = document.createElement('button');
+                addSubBtn.className = 'mgmt-btn';
+                addSubBtn.textContent = '+ 新增子分類';
+                addSubBtn.onclick = () => addSubcategory(category.id);
+                catMgmtDiv.appendChild(addSubBtn);
+
+                categorySection.appendChild(catMgmtDiv);
+            }
+
             category.subcategories.forEach((sub, subIndex) => {
                 // Check if subcategory matches filter
                 const subMatches = sub.title.toLowerCase().includes(filterText) ||
@@ -116,6 +157,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 subTitle.className = 'subcategory-title';
                 subTitle.textContent = sub.title;
                 subDiv.appendChild(subTitle);
+
+                // Admin: Edit Subcategory Name & Delete Subcategory
+                if (adminToken) {
+                    const subMgmtDiv = document.createElement('div');
+                    subMgmtDiv.style.marginBottom = '0.5rem';
+
+                    const editSubBtn = document.createElement('button');
+                    editSubBtn.className = 'mgmt-btn';
+                    editSubBtn.textContent = '編輯名稱';
+                    editSubBtn.onclick = () => editSubcategoryName(category.id, subIndex);
+                    subMgmtDiv.appendChild(editSubBtn);
+
+                    const delSubBtn = document.createElement('button');
+                    delSubBtn.className = 'mgmt-btn';
+                    delSubBtn.textContent = '刪除子分類';
+                    delSubBtn.style.color = 'red';
+                    delSubBtn.onclick = () => deleteSubcategory(category.id, subIndex);
+                    subMgmtDiv.appendChild(delSubBtn);
+
+                    subDiv.appendChild(subMgmtDiv);
+                }
 
                 if (sub.description) {
                     const subDesc = document.createElement('p');
@@ -214,7 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
           `;
 
                     // Conditionally add Buttons if Admin
-                    const adminToken = localStorage.getItem('adminToken');
                     if (adminToken) {
                         const btnContainer = document.createElement('div');
                         btnContainer.style.display = 'flex';
@@ -223,17 +284,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         // Move Button
                         const moveBtn = document.createElement('button');
-                        moveBtn.className = 'move-btn';
+                        moveBtn.className = 'action-btn';
                         moveBtn.textContent = '移動';
-                        moveBtn.style.cssText = "padding: 0.3rem 0.6rem; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem;";
                         moveBtn.onclick = () => openMoveModal(part.id);
                         btnContainer.appendChild(moveBtn);
 
                         // Edit Button
                         const editBtn = document.createElement('button');
-                        editBtn.className = 'edit-btn';
+                        editBtn.className = 'action-btn';
                         editBtn.textContent = '編輯';
-                        editBtn.style.marginLeft = '0'; // Reset margin
                         editBtn.onclick = () => openEditModal(category.id, subIndex, partIndex);
                         btnContainer.appendChild(editBtn);
 
@@ -246,27 +305,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     grid.appendChild(card);
                 });
 
-                if (grid.children.length > 0) {
-                    subDiv.appendChild(grid);
 
-                    // Add Part Button (if admin)
-                    const adminToken = localStorage.getItem('adminToken');
-                    if (adminToken) {
-                        const addBtn = document.createElement('button');
-                        addBtn.className = 'add-part-btn';
-                        addBtn.textContent = '+ 新增零件';
-                        addBtn.style.marginTop = '1rem';
-                        addBtn.onclick = () => openEditModal(category.id, subIndex, -1);
-                        subDiv.appendChild(addBtn);
-                    }
+                subDiv.appendChild(grid);
 
-                    categorySection.appendChild(subDiv);
-                } else if (!category.description && categorySection.children.length > 1) {
+                // Add Part Button (if admin)
+                if (adminToken) {
+                    const addBtn = document.createElement('button');
+                    addBtn.className = 'add-part-btn';
+                    addBtn.textContent = '+ 新增零件';
+                    addBtn.style.marginTop = '1rem';
+                    addBtn.onclick = () => openEditModal(category.id, subIndex, -1);
+                    subDiv.appendChild(addBtn);
+                }
+
+                // Show subcategory if it has content or user is admin
+                if (grid.children.length > 0 || sub.description || adminToken) {
                     categorySection.appendChild(subDiv);
                 }
             });
 
-            if (categorySection.children.length > 2) {
+            if (categorySection.children.length > 2 || adminToken) {
                 container.appendChild(categorySection);
             }
         });
@@ -303,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger subcategory population
         populateSubcategories();
 
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
     };
 
     categorySelect.addEventListener('change', populateSubcategories);
@@ -405,6 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Refresh data and UI
                     partsData = newData;
                     renderParts(searchInput.value.toLowerCase());
+                    renderNav(); // Update navigation bar real-time
                 }
             })
             .catch((error) => {
@@ -456,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
             deletePartBtn.style.display = 'none';
         }
 
-        editModal.style.display = 'block';
+        editModal.style.display = 'flex';
     }
 
     editForm.onsubmit = (e) => {
@@ -495,4 +554,128 @@ document.addEventListener('DOMContentLoaded', () => {
             editModal.style.display = 'none';
         }
     };
+
+    // --- Category Management Functions ---
+    // --- Category Management Functions (Updated for Modal) ---
+    const catModal = document.getElementById('category-modal');
+    const catForm = document.getElementById('category-form');
+    const catIdInput = document.getElementById('cat-id');
+    const catNameInput = document.getElementById('cat-name');
+    const catDescInput = document.getElementById('cat-desc');
+    const catOriginalIdInput = document.getElementById('cat-original-id');
+    const catModeInput = document.getElementById('cat-mode');
+
+    // Close modal logic handled by general close button code above (shared class .close-modal)
+    // But we need to make sure clicks outside close it too:
+    window.addEventListener('click', (event) => {
+        if (event.target == catModal) {
+            catModal.style.display = 'none';
+        }
+    });
+
+    window.openCategoryModal = (mode, categoryId = null) => {
+        catModal.style.display = 'flex';
+        catModeInput.value = mode;
+        if (mode === 'edit' && categoryId) {
+            const cat = partsData.find(c => c.id === categoryId);
+            if (!cat) return;
+            document.getElementById('category-modal-title').textContent = '編輯主分類';
+            catOriginalIdInput.value = categoryId;
+            catIdInput.value = cat.id;
+            catIdInput.disabled = true; // ID cannot be changed in edit mode usually
+            catNameInput.value = cat.title;
+            catDescInput.value = cat.description || '';
+        } else {
+            document.getElementById('category-modal-title').textContent = '新增主分類';
+            catForm.reset();
+            catIdInput.disabled = false;
+            catModeInput.value = 'add';
+        }
+    }
+
+    catForm.onsubmit = (e) => {
+        e.preventDefault();
+        const mode = catModeInput.value;
+        const id = catIdInput.value.trim();
+        const name = catNameInput.value.trim();
+        const desc = catDescInput.value.trim();
+
+        if (!id || !name) {
+            alert('ID 和名稱為必填！');
+            return;
+        }
+
+        if (mode === 'add') {
+            if (partsData.some(c => c.id === id)) {
+                alert('此 ID 已存在！');
+                return;
+            }
+            partsData.push({
+                id: id,
+                title: name,
+                description: desc,
+                subcategories: []
+            });
+        } else {
+            // Edit Mode
+            const originalId = catOriginalIdInput.value;
+            const cat = partsData.find(c => c.id === originalId);
+            if (cat) {
+                cat.title = name;
+                cat.description = desc;
+                // If we allowed ID editing, we would check for duplicates again, but currently disabled
+            }
+        }
+
+        saveData(partsData);
+        catModal.style.display = 'none';
+    };
+
+    window.editCategoryName = (catId) => {
+        openCategoryModal('edit', catId);
+    };
+
+    window.deleteCategory = (catId) => {
+        if (!confirm('確定要刪除此主分類及其所有內容嗎？此操作無法復原！')) return;
+        const idx = partsData.findIndex(c => c.id === catId);
+        if (idx !== -1) {
+            partsData.splice(idx, 1);
+            saveData(partsData);
+        }
+    };
+
+    window.addSubcategory = (catId) => {
+        const cat = partsData.find(c => c.id === catId);
+        if (!cat) return;
+        const name = prompt('請輸入新子分類名稱:');
+        if (name && name.trim() !== '') {
+            cat.subcategories.push({
+                title: name.trim(),
+                description: "",
+                parts: []
+            });
+            saveData(partsData);
+        }
+    };
+
+    window.editSubcategoryName = (catId, subIndex) => {
+        const cat = partsData.find(c => c.id === catId);
+        if (!cat || !cat.subcategories[subIndex]) return;
+        const newName = prompt('請輸入新的子分類名稱:', cat.subcategories[subIndex].title);
+        if (newName && newName.trim() !== '') {
+            cat.subcategories[subIndex].title = newName.trim();
+            saveData(partsData);
+        }
+    };
+
+    window.deleteSubcategory = (catId, subIndex) => {
+        if (!confirm('確定要刪除此子分類及其所有零件嗎？')) return;
+        const cat = partsData.find(c => c.id === catId);
+        if (cat && cat.subcategories[subIndex]) {
+            cat.subcategories.splice(subIndex, 1);
+            saveData(partsData);
+        }
+    };
+
+
 });

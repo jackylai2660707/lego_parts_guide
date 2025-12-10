@@ -797,7 +797,7 @@
   },
   {
     "id": "wheels",
-    "title": "5. 車輪與輪胎 (Wheels & Tires)",
+    "title": "5. ：車輪與輪胎 (Wheels & Tires)",
     "subcategories": [
       {
         "title": "輪框 (Wheels)",
@@ -982,11 +982,12 @@
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "panels",
-    "title": "6. 面板與整流罩 (Panels)",
+    "title": "6. ：面板與整流罩 (Panels)",
     "subcategories": [
       {
         "title": "面板 (Panels)",
@@ -1077,11 +1078,12 @@
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "power",
-    "title": "7. 電子與動力模組 (Power Systems)",
+    "title": "7. ：電子與動力模 (Power Systems)",
     "subcategories": [
       {
         "title": "馬達 (Motors)",
@@ -1237,11 +1239,12 @@
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "others",
-    "title": "8. 其他 (Others)",
+    "title": "8. ：其他 (Others)",
     "subcategories": [
       {
         "title": "機械磚 (Technic Bricks)",
@@ -1569,6 +1572,7 @@
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   }
 ]
