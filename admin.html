@@ -45,6 +45,27 @@
                 <a href="index.html" target="_blank" class="secondary-btn">查看前台</a>
             </div>
 
+            <!-- Password Change Section -->
+            <div id="password-section" class="password-container">
+                <h3>修改密碼</h3>
+                <form id="password-form">
+                    <div class="form-group">
+                        <label for="current-password">目前密碼</label>
+                        <input type="password" id="current-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">新密碼</label>
+                        <input type="password" id="new-password" required minlength="4">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">確認新密碼</label>
+                        <input type="password" id="confirm-password" required minlength="4">
+                    </div>
+                    <button type="submit" class="primary-btn">更新密碼</button>
+                    <p id="password-message" class="message"></p>
+                </form>
+            </div>
+
             <div id="admin-content">
                 <!-- Categories and parts will be rendered here -->
             </div>

@@ -155,6 +155,52 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchData();
     }
 
+    // --- Password Change ---
+    const passwordForm = document.getElementById('password-form');
+    const passwordMessage = document.getElementById('password-message');
+
+    passwordForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const currentPassword = document.getElementById('current-password').value;
+        const newPassword = document.getElementById('new-password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        passwordMessage.textContent = '';
+        passwordMessage.className = 'message';
+
+        if (newPassword !== confirmPassword) {
+            passwordMessage.textContent = '新密碼與確認密碼不符';
+            passwordMessage.classList.add('error');
+            return;
+        }
+
+        try {
+            const token = localStorage.getItem('adminToken');
+            const res = await fetch('/api/change-password', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({ currentPassword, newPassword })
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                passwordMessage.textContent = data.message || '密碼已更新';
+                passwordMessage.classList.add('success');
+                passwordForm.reset();
+            } else {
+                passwordMessage.textContent = data.error || '更新失敗';
+                passwordMessage.classList.add('error');
+            }
+        } catch (err) {
+            passwordMessage.textContent = '連線錯誤，請檢查伺服器';
+            passwordMessage.classList.add('error');
+        }
+    });
+
     // --- Data Management ---
     async function fetchData() {
         try {

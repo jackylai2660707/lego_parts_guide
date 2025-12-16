@@ -1,23 +1,11 @@
 [
   {
     "id": "beams",
-    "title": "1. 結構系：機械樑 (Beams/Liftarms)",
+    "title": "橫杆 (Beams/Liftarms)",
     "subcategories": [
       {
-        "title": "厚樑 (Straight Beams - Thick < 7L)",
+        "title": "橫杆 (Straight Beams - Thick < 7L)",
         "parts": [
-          {
-            "id": "39793",
-            "name": "銷連接器 Block, Liftarm 1 x 3 x 3",
-            "visual": "銷連接器 Block, Liftarm 1 x 3 x 3",
-            "colorId": 11
-          },
-          {
-            "id": "32278",
-            "name": "厚樑 1 x 15",
-            "visual": "厚樑 1 x 15",
-            "colorId": 11
-          },
           {
             "id": "60483",
             "name": "厚樑 1 x 2 - 軸孔",
@@ -28,6 +16,30 @@
             "id": "32523",
             "name": "厚樑 1 x 3",
             "visual": "厚樑 1 x 3",
+            "colorId": 11
+          },
+          {
+            "id": "43857",
+            "name": "厚樑 1 x 2",
+            "visual": "厚樑 1 x 2",
+            "colorId": 86
+          },
+          {
+            "id": "32316",
+            "name": "厚樑 1 x 5",
+            "visual": "厚樑 1 x 5",
+            "colorId": 86
+          },
+          {
+            "id": "18654",
+            "name": "厚樑 1 x 1 (Spacer)",
+            "visual": "厚樑 1 x 1 (Spacer)",
+            "colorId": 11
+          },
+          {
+            "id": "32278",
+            "name": "厚樑 1 x 15",
+            "visual": "厚樑 1 x 15",
             "colorId": 11
           },
           {
@@ -49,37 +61,24 @@
             "colorId": 86
           },
           {
-            "id": "43857",
-            "name": "厚樑 1 x 2",
-            "visual": "厚樑 1 x 2",
-            "colorId": 86
-          },
-          {
-            "id": "32316",
-            "name": "厚樑 1 x 5",
-            "visual": "厚樑 1 x 5",
-            "colorId": 86
-          },
-          {
             "id": "32524",
             "name": "厚樑 1 x 7",
             "visual": "厚樑 1 x 7",
             "colorId": 86
-          },
-          {
-            "id": "39370",
-            "name": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm",
-            "visual": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm",
-            "colorId": 156
           }
         ]
-      },
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "beams_2",
+    "title": "半橫杆",
+    "description": "",
+    "subcategories": [
       {
-        "title": "厚樑 (Straight Beams - Thick >= 7L)",
-        "parts": []
-      },
-      {
-        "title": "薄樑 (Straight Beams - Thin)",
+        "title": "半橫杆",
+        "description": "",
         "parts": [
           {
             "id": "41677",
@@ -104,11 +103,37 @@
             "name": "薄樑 1 x 3 - 軸孔s",
             "visual": "薄樑 1 x 3 - 軸孔s",
             "colorId": 86
+          },
+          {
+            "id": "99773",
+            "name": "異形樑 Triangle Thin 3 x 5 帶 短 Supports",
+            "visual": "異形樑 Triangle Thin 3 x 5 帶 短 Supports",
+            "colorId": 86
+          },
+          {
+            "id": "33299",
+            "name": "異形樑 Crank / 銷 1 x 3 - 軸孔s",
+            "visual": "異形樑 Crank / 銷 1 x 3 - 軸孔s",
+            "colorId": 11
+          },
+          {
+            "id": "6575",
+            "name": "Technic Cam",
+            "visual": "Technic Cam",
+            "colorId": 85
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "beam_3",
+    "title": "角杆",
+    "description": "",
+    "subcategories": [
       {
-        "title": "轉角樑 (Angled Beams)",
+        "title": "角杆",
+        "description": "",
         "parts": [
           {
             "id": "32009",
@@ -126,12 +151,6 @@
             "id": "6629",
             "name": "異形樑 彎折 Thick 1 x 9 (6 - 4)",
             "visual": "異形樑 彎折 Thick 1 x 9 (6 - 4)",
-            "colorId": 11
-          },
-          {
-            "id": "33299",
-            "name": "異形樑 Crank / 銷 1 x 3 - 軸孔s",
-            "visual": "異形樑 Crank / 銷 1 x 3 - 軸孔s",
             "colorId": 11
           },
           {
@@ -163,29 +182,31 @@
             "name": "異形樑 H-Shape Thick 3 x 5 垂直",
             "visual": "異形樑 H-Shape Thick 3 x 5 垂直",
             "colorId": 86
-          },
-          {
-            "id": "99773",
-            "name": "異形樑 Triangle Thin 3 x 5 帶 短 Supports",
-            "visual": "異形樑 Triangle Thin 3 x 5 帶 短 Supports",
-            "colorId": 86
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "frames",
+    "title": "框架",
+    "description": "",
+    "subcategories": [
       {
-        "title": "框架 (Frames)",
+        "title": "框架",
+        "description": "",
         "parts": [
-          {
-            "id": "64179",
-            "name": "異形樑 Frame Thick 5 x 7 Open 中心",
-            "visual": "異形樑 Frame Thick 5 x 7 Open 中心",
-            "colorId": 11
-          },
           {
             "id": "64178",
             "name": "異形樑 Frame Thick 5 x 11 Open 中心",
             "visual": "異形樑 Frame Thick 5 x 11 Open 中心",
             "colorId": 86
+          },
+          {
+            "id": "64179",
+            "name": "異形樑 Frame Thick 5 x 7 Open 中心",
+            "visual": "異形樑 Frame Thick 5 x 7 Open 中心",
+            "colorId": 11
           },
           {
             "id": "65817",
@@ -210,11 +231,13 @@
     ]
   },
   {
-    "id": "connectors",
-    "title": "2. 連接系：銷與連接器 (Pins & Connectors)",
+    "id": "pins",
+    "title": "插針",
+    "description": "",
     "subcategories": [
       {
-        "title": "摩擦銷 (Friction Pins)",
+        "title": "摩擦插針",
+        "description": "",
         "parts": [
           {
             "id": "18651",
@@ -263,35 +286,42 @@
             "name": "銷 3L 帶 摩擦脊 與 止擋 Bush",
             "visual": "銷 3L 帶 摩擦脊 與 止擋 Bush",
             "colorId": 86
+          },
+          {
+            "id": "32138",
+            "name": "銷 Double 帶軸孔",
+            "visual": "銷 Double 帶軸孔",
+            "colorId": 11
+          },
+          {
+            "id": "2736",
+            "name": "軸 1L 帶 拖車球",
+            "visual": "軸 1L 帶 拖車球",
+            "colorId": 86
           }
         ]
       },
       {
-        "title": "平滑銷 (Smooth Pins)",
+        "title": "光滑插針",
+        "description": "",
         "parts": [
           {
-            "id": "87407",
-            "name": "齒輪 20 齒 斜面 帶銷孔",
-            "visual": "齒輪 20 齒 斜面 帶銷孔",
-            "colorId": 86
+            "id": "32002",
+            "name": "銷 3/4",
+            "visual": "銷 3/4",
+            "colorId": 2
           },
           {
-            "id": "11954",
-            "name": "面板 彎曲 11 x 3 帶 10 銷孔s through Panel Surface",
-            "visual": "面板 彎曲 11 x 3 帶 10 銷孔s through Panel Surface",
-            "colorId": 11
+            "id": "3749",
+            "name": "軸 1L 帶 銷 帶out 摩擦脊 帶 圓形 Hole",
+            "visual": "軸 1L 帶 銷 帶out 摩擦脊 帶 圓形 Hole",
+            "colorId": 2
           },
           {
-            "id": "24119",
-            "name": "面板 彎曲 7 x 3 帶 2 銷孔s through Panel Surface",
-            "visual": "面板 彎曲 7 x 3 帶 2 銷孔s through Panel Surface",
-            "colorId": 11
-          },
-          {
-            "id": "4274",
-            "name": "銷 1/2 帶out 摩擦脊",
-            "visual": "銷 1/2 帶out 摩擦脊",
-            "colorId": 7
+            "id": "32556",
+            "name": "銷 3L 帶out 摩擦脊",
+            "visual": "銷 3L 帶out 摩擦脊",
+            "colorId": 2
           },
           {
             "id": "3673",
@@ -300,48 +330,19 @@
             "colorId": 86
           },
           {
-            "id": "32002",
-            "name": "銷 3/4",
-            "visual": "銷 3/4",
-            "colorId": 2
-          },
-          {
-            "id": "32556",
-            "name": "銷 3L 帶out 摩擦脊",
-            "visual": "銷 3L 帶out 摩擦脊",
-            "colorId": 2
+            "id": "4274",
+            "name": "銷 1/2 帶out 摩擦脊",
+            "visual": "銷 1/2 帶out 摩擦脊",
+            "colorId": 7
           }
         ]
-      },
-      {
-        "title": "軸銷 (Axle Pins)",
-        "parts": [
-          {
-            "id": "3749",
-            "name": "軸 1L 帶 銷 帶out 摩擦脊 帶 圓形 Hole",
-            "visual": "軸 1L 帶 銷 帶out 摩擦脊 帶 圓形 Hole",
-            "colorId": 2
-          },
-          {
-            "id": "64781",
-            "name": "齒輪 Rack 1 x 13 帶 軸 與 銷孔s",
-            "visual": "齒輪 Rack 1 x 13 帶 軸 與 銷孔s",
-            "colorId": 11
-          },
-          {
-            "id": "87761",
-            "name": "齒輪 Rack 1 x 7 帶 軸 與 銷孔s",
-            "visual": "齒輪 Rack 1 x 7 帶 軸 與 銷孔s",
-            "colorId": 11
-          },
-          {
-            "id": "32138",
-            "name": "銷 Double 帶軸孔",
-            "visual": "銷 Double 帶軸孔",
-            "colorId": 11
-          }
-        ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "connectors",
+    "title": "連接器",
+    "subcategories": [
       {
         "title": "轉角連接器 (Angle Connectors)",
         "parts": [
@@ -386,11 +387,17 @@
             "name": "軸 與 銷 Connector 角度 #4 - 135 degrees",
             "visual": "軸 與 銷 Connector 角度 #4 - 135 degrees",
             "colorId": 1
+          },
+          {
+            "id": "6538c",
+            "name": "軸連接器 2L (平滑 帶 x Hole + Orientation)",
+            "visual": "軸連接器 2L (平滑 帶 x Hole + Orientation)",
+            "colorId": 5
           }
         ]
       },
       {
-        "title": "垂直連接器 (Perpendicular Connectors)",
+        "title": "垂直連接器",
         "parts": [
           {
             "id": "6536",
@@ -457,12 +464,13 @@
             "name": "銷連接器 垂直 2 x 2 彎折",
             "visual": "銷連接器 垂直 2 x 2 彎折",
             "colorId": 5
-          }
-        ]
-      },
-      {
-        "title": "其他連接器 (Other Connectors)",
-        "parts": [
+          },
+          {
+            "id": "32039",
+            "name": "軸連接器 帶軸孔",
+            "visual": "軸連接器 帶軸孔",
+            "colorId": 11
+          },
           {
             "id": "6553",
             "name": "軸 2L 帶 Reverser Handle 軸 Connector",
@@ -470,15 +478,20 @@
             "colorId": 85
           },
           {
+            "id": "39793",
+            "name": "銷連接器 Block, Liftarm 1 x 3 x 3",
+            "visual": "銷連接器 Block, Liftarm 1 x 3 x 3",
+            "colorId": 11
+          }
+        ]
+      },
+      {
+        "title": "其他連接器 (Other Connectors)",
+        "parts": [
+          {
             "id": "98585",
             "name": "軸連接器 Block 圓形 帶 2 銷孔s 與 3 軸孔s (Hero Factory Weapon Barrel)",
             "visual": "軸連接器 Block 圓形 帶 2 銷孔s 與 3 軸孔s (Hero Factory Weapon Barrel)",
-            "colorId": 11
-          },
-          {
-            "id": "32039",
-            "name": "軸連接器 帶軸孔",
-            "visual": "軸連接器 帶軸孔",
             "colorId": 11
           },
           {
@@ -500,34 +513,47 @@
             "colorId": 86
           },
           {
-            "id": "6538c",
-            "name": "軸連接器 2L (平滑 帶 x Hole + Orientation)",
-            "visual": "軸連接器 2L (平滑 帶 x Hole + Orientation)",
-            "colorId": 5
-          },
-          {
             "id": "6538b",
             "name": "軸連接器 2L (Ridged 帶 x Hole x Orientation)",
             "visual": "軸連接器 2L (Ridged 帶 x Hole x Orientation)",
             "colorId": 2
+          },
+          {
+            "id": "10197",
+            "name": "軸 與 銷 Connector 主機 帶 2 垂直 軸s",
+            "visual": "軸 與 銷 Connector 主機 帶 2 垂直 軸s",
+            "colorId": 85
+          },
+          {
+            "id": "92906",
+            "name": "轉向 萬向接頭 窄 帶 2L 軸",
+            "visual": "轉向 萬向接頭 窄 帶 2L 軸",
+            "colorId": 85
+          },
+          {
+            "id": "57585",
+            "name": "軸連接器 主機 帶 3 軸s",
+            "visual": "軸連接器 主機 帶 3 軸s",
+            "colorId": 86
+          },
+          {
+            "id": "22961",
+            "name": "軸 與 銷 Connector 主機 帶 1L 軸",
+            "visual": "軸 與 銷 Connector 主機 帶 1L 軸",
+            "colorId": 1
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "axles",
-    "title": "3. 動力傳輸系：軸 (Axles)",
+    "title": "軸 (Axles)",
     "subcategories": [
       {
-        "title": "偶數軸 (Even Axles)",
+        "title": "軸",
         "parts": [
-          {
-            "id": "4032",
-            "name": "平板, 圓形 2 x 2 帶軸孔",
-            "visual": "平板, 圓形 2 x 2 帶軸孔",
-            "colorId": 11
-          },
           {
             "id": "3705",
             "name": "軸 4L",
@@ -571,59 +597,6 @@
             "colorId": 5
           },
           {
-            "id": "3648",
-            "name": "齒輪 24 齒 帶 1 軸孔",
-            "visual": "齒輪 24 齒 帶 1 軸孔",
-            "colorId": 85
-          },
-          {
-            "id": "94925",
-            "name": "齒輪 16 齒 - 軸孔 帶 Closed Sides",
-            "visual": "齒輪 16 齒 - 軸孔 帶 Closed Sides",
-            "colorId": 86
-          },
-          {
-            "id": "32905",
-            "name": "齒輪 Worm Screw, 長, 軸 Opening Type II",
-            "visual": "齒輪 Worm Screw, 長, 軸 Opening Type II",
-            "colorId": 86
-          },
-          {
-            "id": "92906",
-            "name": "轉向 萬向接頭 窄 帶 2L 軸",
-            "visual": "轉向 萬向接頭 窄 帶 2L 軸",
-            "colorId": 85
-          },
-          {
-            "id": "92908",
-            "name": "轉向 門式軸, 外殼",
-            "visual": "轉向 門式軸, 外殼",
-            "colorId": 86
-          }
-        ]
-      },
-      {
-        "title": "奇數軸 (Odd Axles)",
-        "parts": [
-          {
-            "id": "x346",
-            "name": "生化 1 x 3 齒 帶軸孔 (Bohrok 眼)",
-            "visual": "生化 1 x 3 齒 帶軸孔 (Bohrok 眼)",
-            "colorId": 5
-          },
-          {
-            "id": "6587",
-            "name": "Dark 軸 3L 帶顆粒",
-            "visual": "Dark 軸 3L 帶顆粒",
-            "colorId": 69
-          },
-          {
-            "id": "2736",
-            "name": "軸 1L 帶 拖車球",
-            "visual": "軸 1L 帶 拖車球",
-            "colorId": 86
-          },
-          {
             "id": "4519",
             "name": "軸 3L",
             "visual": "軸 3L",
@@ -659,12 +632,6 @@
         "title": "止擋軸 (Stop Axles)",
         "parts": [
           {
-            "id": "87083",
-            "name": "軸 4L 帶止擋",
-            "visual": "軸 4L 帶止擋",
-            "colorId": 85
-          },
-          {
             "id": "32209",
             "name": "軸 5.5L 帶止擋",
             "visual": "軸 5.5L 帶止擋",
@@ -687,18 +654,44 @@
             "name": "軸 4L 帶 中心止擋",
             "visual": "軸 4L 帶 中心止擋",
             "colorId": 2
+          },
+          {
+            "id": "87083",
+            "name": "軸 4L 帶止擋",
+            "visual": "軸 4L 帶止擋",
+            "colorId": 85
+          },
+          {
+            "id": "6587",
+            "name": "Dark 軸 3L 帶顆粒",
+            "visual": "Dark 軸 3L 帶顆粒",
+            "colorId": 69
           }
         ]
       },
       {
         "title": "軸套 (Bushes)",
-        "parts": []
+        "parts": [
+          {
+            "id": "4265c",
+            "name": "半軸套",
+            "visual": "Technic Bush 1/2 平滑",
+            "colorId": 3
+          },
+          {
+            "id": "3713",
+            "name": "軸套",
+            "visual": "Technic Bush",
+            "colorId": 86
+          }
+        ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "gears",
-    "title": "4. 傳動系：齒輪 (Gears)",
+    "title": "齒輪 (Gears)",
     "subcategories": [
       {
         "title": "直齒輪 (Spur Gears)",
@@ -714,6 +707,24 @@
             "name": "齒輪 40 齒",
             "visual": "齒輪 40 齒",
             "colorId": 86
+          },
+          {
+            "id": "3648",
+            "name": "齒輪 24 齒 帶 1 軸孔",
+            "visual": "齒輪 24 齒 帶 1 軸孔",
+            "colorId": 85
+          },
+          {
+            "id": "94925",
+            "name": "齒輪 16 齒 - 軸孔 帶 Closed Sides",
+            "visual": "齒輪 16 齒 - 軸孔 帶 Closed Sides",
+            "colorId": 86
+          },
+          {
+            "id": "6542b",
+            "name": "齒輪 16 齒 帶 離合, 平滑",
+            "visual": "齒輪 16 齒 帶 離合, 平滑",
+            "colorId": 85
           }
         ]
       },
@@ -745,12 +756,6 @@
             "colorId": 7
           },
           {
-            "id": "62821b",
-            "name": "齒輪 差速器 28 齒 斜面 - Inner Tabs 帶 Closed 中心",
-            "visual": "齒輪 差速器 28 齒 斜面 - Inner Tabs 帶 Closed 中心",
-            "colorId": 85
-          },
-          {
             "id": "46372",
             "name": "齒輪 28 齒 雙斜面",
             "visual": "齒輪 28 齒 雙斜面",
@@ -767,6 +772,12 @@
             "name": "齒輪 20 齒 斜面",
             "visual": "齒輪 20 齒 斜面",
             "colorId": 2
+          },
+          {
+            "id": "87407",
+            "name": "齒輪 20 齒 斜面 帶銷孔",
+            "visual": "齒輪 20 齒 斜面 帶銷孔",
+            "colorId": 86
           }
         ]
       },
@@ -774,30 +785,49 @@
         "title": "特殊齒輪 (Special Gears)",
         "parts": [
           {
-            "id": "24121",
-            "name": "齒輪 Rack 11 x 11 彎曲",
-            "visual": "齒輪 Rack 11 x 11 彎曲",
-            "colorId": 11
-          },
-          {
-            "id": "6542b",
-            "name": "齒輪 16 齒 帶 離合, 平滑",
-            "visual": "齒輪 16 齒 帶 離合, 平滑",
-            "colorId": 85
-          },
-          {
             "id": "4716",
             "name": "齒輪 Worm Screw, 長",
             "visual": "齒輪 Worm Screw, 長",
             "colorId": 86
+          },
+          {
+            "id": "64781",
+            "name": "齒輪 Rack 1 x 13 帶 軸 與 銷孔s",
+            "visual": "齒輪 Rack 1 x 13 帶 軸 與 銷孔s",
+            "colorId": 11
+          },
+          {
+            "id": "87761",
+            "name": "齒輪 Rack 1 x 7 帶 軸 與 銷孔s",
+            "visual": "齒輪 Rack 1 x 7 帶 軸 與 銷孔s",
+            "colorId": 11
+          },
+          {
+            "id": "32905",
+            "name": "齒輪 Worm Screw, 長, 軸 Opening Type II",
+            "visual": "齒輪 Worm Screw, 長, 軸 Opening Type II",
+            "colorId": 86
+          },
+          {
+            "id": "62821b",
+            "name": "齒輪 差速器 28 齒 斜面 - Inner Tabs 帶 Closed 中心",
+            "visual": "齒輪 差速器 28 齒 斜面 - Inner Tabs 帶 Closed 中心",
+            "colorId": 85
+          },
+          {
+            "id": "32072",
+            "name": "甜甜圈齒輪 ",
+            "visual": "齒輪 Knob Cog 輪框 帶軸孔 (+ Orientation)",
+            "colorId": 11
           }
         ]
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "id": "wheels",
-    "title": "5. ：車輪與輪胎 (Wheels & Tires)",
+    "title": "車輪與輪胎 (Wheels & Tires)",
     "subcategories": [
       {
         "title": "輪框 (Wheels)",
@@ -807,30 +837,6 @@
             "name": "輪框 Ball, Hard Plastic 19mm D.",
             "visual": "輪框 Ball, Hard Plastic 19mm D.",
             "colorId": 1
-          },
-          {
-            "id": "32072",
-            "name": "齒輪 Knob Cog 輪框 帶軸孔 (+ Orientation)",
-            "visual": "齒輪 Knob Cog 輪框 帶軸孔 (+ Orientation)",
-            "colorId": 11
-          },
-          {
-            "id": "92909",
-            "name": "轉向, 輪框 主機 3 Pins 圓形",
-            "visual": "轉向, 輪框 主機 3 Pins 圓形",
-            "colorId": 85
-          },
-          {
-            "id": "92908c01",
-            "name": "轉向 門式軸, 外殼 帶 輪框 主機 3 Pins 圓形 (92908 / 92909)",
-            "visual": "轉向 門式軸, 外殼 帶 輪框 主機 3 Pins 圓形 (92908 / 92909)",
-            "colorId": 86
-          },
-          {
-            "id": "39370c01",
-            "name": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm 帶 輪框 Ball, Hard Plastic 19mm D. (39370 / 52629)",
-            "visual": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm 帶 輪框 Ball, Hard Plastic 19mm D. (39370 / 52629)",
-            "colorId": 156
           },
           {
             "id": "4185",
@@ -885,6 +891,18 @@
             "name": "輪框 18mm D. x 8mm 帶 Fake Bolts 與 Shallow Spokes 與 軸孔",
             "visual": "輪框 18mm D. x 8mm 帶 Fake Bolts 與 Shallow Spokes 與 軸孔",
             "colorId": 1
+          },
+          {
+            "id": "39370",
+            "name": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm",
+            "visual": "轉向 球頭 大 Receptacle 帶 H-Shape 垂直 Thick Liftarm",
+            "colorId": 156
+          },
+          {
+            "id": "92911",
+            "name": "轉向 球頭 大 Receptacle",
+            "visual": "轉向 球頭 大 Receptacle",
+            "colorId": 85
           }
         ]
       },
@@ -910,12 +928,6 @@
             "colorId": 11
           },
           {
-            "id": "15038c04",
-            "name": "輪框 56mm D. x 34mm Technic Racing 中, 6 銷孔s 帶 輪胎 68.8 x 36 ZR (15038 / 44771)",
-            "visual": "輪框 56mm D. x 34mm Technic Racing 中, 6 銷孔s 帶 輪胎 68.8 x 36 ZR (15038 / 44771)",
-            "colorId": 86
-          },
-          {
             "id": "56903c01",
             "name": "輪框 18mm D. x 8mm 帶 Fake Bolts 與 Shallow Spokes 與 軸孔 帶 輪胎 24mm D. x 7mm Offset 胎紋 - 環 A圓形 中心 of 胎紋 (56903 / 61254)",
             "visual": "輪框 18mm D. x 8mm 帶 Fake Bolts 與 Shallow Spokes 與 軸孔 帶 輪胎 24mm D. x 7mm Offset 胎紋 - 環 A圓形 中心 of 胎紋 (56903 / 61254)",
@@ -934,6 +946,37 @@
             "colorId": 11
           },
           {
+            "id": "2815",
+            "name": "輪胎 Technic 楔形 皮帶 輪框",
+            "visual": "輪胎 Technic 楔形 皮帶 輪框",
+            "colorId": 11
+          }
+        ]
+      },
+      {
+        "title": "大型車輪",
+        "description": "",
+        "parts": []
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "big_wheels",
+    "title": "特大車輪",
+    "description": "",
+    "subcategories": [
+      {
+        "title": "特大車輪",
+        "description": "",
+        "parts": [
+          {
+            "id": "15038c04",
+            "name": "輪框 56mm D. x 34mm Technic Racing 中, 6 銷孔s 帶 輪胎 68.8 x 36 ZR (15038 / 44771)",
+            "visual": "輪框 56mm D. x 34mm Technic Racing 中, 6 銷孔s 帶 輪胎 68.8 x 36 ZR (15038 / 44771)",
+            "colorId": 86
+          },
+          {
             "id": "44309",
             "name": "輪胎 43.2 x 22 ZR",
             "visual": "輪胎 43.2 x 22 ZR",
@@ -950,35 +993,29 @@
             "name": "輪胎 68.8 x 36 ZR",
             "visual": "輪胎 68.8 x 36 ZR",
             "colorId": 11
-          },
-          {
-            "id": "2815",
-            "name": "輪胎 Technic 楔形 皮帶 輪框",
-            "visual": "輪胎 Technic 楔形 皮帶 輪框",
-            "colorId": 11
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "panels",
+    "title": "6. ：面板 (Panels)",
+    "subcategories": [
       {
-        "title": "履帶與其他 (Tracks & Others)",
+        "title": "面板 (Panels)",
         "parts": [
           {
-            "id": "57518",
-            "name": "Technic, Link 胎紋 Wide 帶 2 銷孔s",
-            "visual": "Technic, Link 胎紋 Wide 帶 2 銷孔s",
+            "id": "15458",
+            "name": "面板 平板 3 x 11 x 1",
+            "visual": "面板 平板 3 x 11 x 1",
             "colorId": 11
           },
           {
-            "id": "14149",
-            "name": "Technic, Link 胎紋 Attachment, Double, 橡膠",
-            "visual": "Technic, Link 胎紋 Attachment, Double, 橡膠",
-            "colorId": 5
-          },
-          {
-            "id": "57519",
-            "name": "Technic 胎紋 Sprocket 輪框 大",
-            "visual": "Technic 胎紋 Sprocket 輪框 大",
-            "colorId": 11
+            "id": "39369",
+            "name": "面板 平板 11 x 19 x 1",
+            "visual": "面板 平板 11 x 19 x 1",
+            "colorId": 3
           }
         ]
       }
@@ -986,11 +1023,13 @@
     "description": ""
   },
   {
-    "id": "panels",
-    "title": "6. ：面板與整流罩 (Panels)",
+    "id": "panels_2",
+    "title": "整流罩",
+    "description": "",
     "subcategories": [
       {
-        "title": "面板 (Panels)",
+        "title": "整流罩",
+        "description": "",
         "parts": [
           {
             "id": "87080",
@@ -1053,12 +1092,6 @@
             "colorId": 11
           },
           {
-            "id": "15458",
-            "name": "面板 平板 3 x 11 x 1",
-            "visual": "面板 平板 3 x 11 x 1",
-            "colorId": 11
-          },
-          {
             "id": "11946",
             "name": "面板 整流罩 #21 Very 小 平滑, B面",
             "visual": "面板 整流罩 #21 Very 小 平滑, B面",
@@ -1071,15 +1104,20 @@
             "colorId": 5
           },
           {
-            "id": "39369",
-            "name": "面板 平板 11 x 19 x 1",
-            "visual": "面板 平板 11 x 19 x 1",
-            "colorId": 3
+            "id": "24119",
+            "name": "面板 彎曲 7 x 3 帶 2 銷孔s through Panel Surface",
+            "visual": "面板 彎曲 7 x 3 帶 2 銷孔s through Panel Surface",
+            "colorId": 11
+          },
+          {
+            "id": "11954",
+            "name": "面板 彎曲 11 x 3 帶 10 銷孔s through Panel Surface",
+            "visual": "面板 彎曲 11 x 3 帶 10 銷孔s through Panel Surface",
+            "colorId": 11
           }
         ]
       }
-    ],
-    "description": ""
+    ]
   },
   {
     "id": "power",
@@ -1104,12 +1142,6 @@
             "id": "54675c01",
             "name": "Electric, Motor SPIKE Prime / PoweUp, 大 Angular 帶 Top 外殼 與 線",
             "visual": "Electric, Motor SPIKE Prime / PoweUp, 大 Angular 帶 Top 外殼 與 線",
-            "colorId": 156
-          },
-          {
-            "id": "54696c01",
-            "name": "Electric, Motor SPIKE Prime / PoweUp, 中 Angular 帶 Top 外殼 與 線",
-            "visual": "Electric, Motor SPIKE Prime / PoweUp, 中 Angular 帶 Top 外殼 與 線",
             "colorId": 156
           }
         ]
@@ -1182,17 +1214,50 @@
             "name": "Electric, 主機 大 - SPIKE Prime",
             "visual": "Electric, 主機 大 - SPIKE Prime",
             "colorId": 3
+          }
+        ]
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "USB_Cable",
+    "title": "USB線",
+    "description": "",
+    "subcategories": [
+      {
+        "title": "USB線",
+        "description": "",
+        "parts": [
+          {
+            "id": "39881c01",
+            "name": "Electric, 線 USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)",
+            "visual": "Electric, 線 USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)",
+            "colorId": 1
           },
           {
             "id": "10916",
             "name": "Electric, 線 USB for Mindstorms EV3, Male USB-A to Male USB Mini-B (Length 2m / 6ft)",
             "visual": "Electric, 線 USB for Mindstorms EV3, Male USB-A to Male USB Mini-B (Length 2m / 6ft)",
             "colorId": 11
-          },
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EV3_cable",
+    "title": "EV3連接線",
+    "description": "",
+    "subcategories": [
+      {
+        "title": "EV3線",
+        "description": "",
+        "parts": [
           {
-            "id": "bb0601",
-            "name": "Electric, Connector 線, Mindstorms NXT 25cm",
-            "visual": "Electric, Connector 線, Mindstorms NXT 25cm",
+            "id": "55806",
+            "name": "Electric, Connector 線, Mindstorms NXT 50cm",
+            "visual": "Electric, Connector 線, Mindstorms NXT 50cm",
             "colorId": 11
           },
           {
@@ -1202,81 +1267,23 @@
             "colorId": 11
           },
           {
-            "id": "55806",
-            "name": "Electric, Connector 線, Mindstorms NXT 50cm",
-            "visual": "Electric, Connector 線, Mindstorms NXT 50cm",
+            "id": "bb0601",
+            "name": "Electric, Connector 線, Mindstorms NXT 25cm",
+            "visual": "Electric, Connector 線, Mindstorms NXT 25cm",
             "colorId": 11
-          },
-          {
-            "id": "39881c01",
-            "name": "Electric, 線 USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)",
-            "visual": "Electric, 線 USB for SPIKE Prime / Robot Inventor, Male USB-A to Male USB Micro-B (Length 1m)",
-            "colorId": 1
-          },
-          {
-            "id": "98578",
-            "name": "Trans-Dark Hero Factory Weapon, Spiked Ball Half 帶軸孔",
-            "visual": "Trans-Dark Hero Factory Weapon, Spiked Ball Half 帶軸孔",
-            "colorId": 14
-          },
-          {
-            "id": "10197",
-            "name": "軸 與 銷 Connector 主機 帶 2 垂直 軸s",
-            "visual": "軸 與 銷 Connector 主機 帶 2 垂直 軸s",
-            "colorId": 85
-          },
-          {
-            "id": "57585",
-            "name": "軸連接器 主機 帶 3 軸s",
-            "visual": "軸連接器 主機 帶 3 軸s",
-            "colorId": 86
-          },
-          {
-            "id": "22961",
-            "name": "軸 與 銷 Connector 主機 帶 1L 軸",
-            "visual": "軸 與 銷 Connector 主機 帶 1L 軸",
-            "colorId": 1
           }
         ]
       }
-    ],
-    "description": ""
+    ]
   },
   {
-    "id": "others",
-    "title": "8. ：其他 (Others)",
+    "id": "rubber",
+    "title": "9. ：橡胶類",
+    "description": "",
     "subcategories": [
       {
-        "title": "機械磚 (Technic Bricks)",
-        "parts": [
-          {
-            "id": "3003",
-            "name": "磚 2 x 2",
-            "visual": "磚 2 x 2",
-            "colorId": 11
-          },
-          {
-            "id": "3941",
-            "name": "磚, 圓形 2 x 2 帶軸孔",
-            "visual": "磚, 圓形 2 x 2 帶軸孔",
-            "colorId": 15
-          },
-          {
-            "id": "39789",
-            "name": "機械磚 2 x 4 帶 3 軸孔s",
-            "visual": "機械磚 2 x 4 帶 3 軸孔s",
-            "colorId": 7
-          },
-          {
-            "id": "18654",
-            "name": "厚樑 1 x 1 (Spacer)",
-            "visual": "厚樑 1 x 1 (Spacer)",
-            "colorId": 11
-          }
-        ]
-      },
-      {
         "title": "橡筋與皮帶 (Rubber Bands & Belts)",
+        "description": "",
         "parts": [
           {
             "id": "x89",
@@ -1307,6 +1314,132 @@
             "name": "軸連接器 Double - Flexible 橡膠",
             "visual": "軸連接器 Double - Flexible 橡膠",
             "colorId": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bricks",
+    "title": "樂高磚塊",
+    "description": "",
+    "subcategories": [
+      {
+        "title": "方塊",
+        "description": "",
+        "parts": [
+          {
+            "id": "3003",
+            "name": "磚 2 x 2",
+            "visual": "磚 2 x 2",
+            "colorId": 11
+          }
+        ]
+      },
+      {
+        "title": "長方塊",
+        "description": "",
+        "parts": [
+          {
+            "id": "39789",
+            "name": "機械磚 2 x 4 帶 3 軸孔s",
+            "visual": "機械磚 2 x 4 帶 3 軸孔s",
+            "colorId": 7
+          }
+        ]
+      },
+      {
+        "title": "條形",
+        "description": "",
+        "parts": []
+      },
+      {
+        "title": "圓形磚塊",
+        "description": "",
+        "parts": [
+          {
+            "id": "3941",
+            "name": "磚",
+            "visual": "磚, 圓形 2 x 2 帶軸孔",
+            "colorId": 15
+          }
+        ]
+      },
+      {
+        "title": "平板塊",
+        "description": "",
+        "parts": [
+          {
+            "id": "3738",
+            "name": "Technic, 平板 2 x 8 帶 7 Holes",
+            "visual": "Technic, 平板 2 x 8 帶 7 Holes",
+            "colorId": 11
+          },
+          {
+            "id": "4032",
+            "name": "平板, 圓形 2 x 2 帶軸孔",
+            "visual": "平板, 圓形 2 x 2 帶軸孔",
+            "colorId": 11
+          },
+          {
+            "id": "4282",
+            "name": "平板 2 x 16",
+            "visual": "平板 2 x 16",
+            "colorId": 71
+          },
+          {
+            "id": "2654",
+            "name": "平板, 圓形 2 x 2 帶 圓形ed Bottom (Boat Stud)",
+            "visual": "平板, 圓形 2 x 2 帶 圓形ed Bottom (Boat Stud)",
+            "colorId": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tracks",
+    "title": "履帶車輪",
+    "description": "",
+    "subcategories": [
+      {
+        "title": "履帶車輪",
+        "description": "",
+        "parts": [
+          {
+            "id": "14149",
+            "name": "Technic, Link 胎紋 Attachment, Double, 橡膠",
+            "visual": "Technic, Link 胎紋 Attachment, Double, 橡膠",
+            "colorId": 5
+          },
+          {
+            "id": "57518",
+            "name": "Technic, Link 胎紋 Wide 帶 2 銷孔s",
+            "visual": "Technic, Link 胎紋 Wide 帶 2 銷孔s",
+            "colorId": 11
+          },
+          {
+            "id": "57519",
+            "name": "Technic 胎紋 Sprocket 輪框 大",
+            "visual": "Technic 胎紋 Sprocket 輪框 大",
+            "colorId": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "others",
+    "title": "8. ：其他 (Others)",
+    "subcategories": [
+      {
+        "title": "機械磚 (Technic Bricks)",
+        "parts": [
+          {
+            "id": "98578",
+            "name": "Trans-Dark Hero Factory Weapon, Spiked Ball Half 帶軸孔",
+            "visual": "Trans-Dark Hero Factory Weapon, Spiked Ball Half 帶軸孔",
+            "colorId": 14
           }
         ]
       },
@@ -1362,21 +1495,9 @@
             "colorId": 86
           },
           {
-            "id": "92911",
-            "name": "轉向 球頭 大 Receptacle",
-            "visual": "轉向 球頭 大 Receptacle",
-            "colorId": 85
-          },
-          {
             "id": "92910",
             "name": "轉向 球頭 大 Open 帶 C-Shape Pivot Frame",
             "visual": "轉向 球頭 大 Open 帶 C-Shape Pivot Frame",
-            "colorId": 86
-          },
-          {
-            "id": "32494",
-            "name": "轉向 萬向接頭",
-            "visual": "轉向 萬向接頭",
             "colorId": 86
           }
         ]
@@ -1421,18 +1542,6 @@
             "colorId": 15
           },
           {
-            "id": "4282",
-            "name": "平板 2 x 16",
-            "visual": "平板 2 x 16",
-            "colorId": 71
-          },
-          {
-            "id": "2654",
-            "name": "平板, 圓形 2 x 2 帶 圓形ed Bottom (Boat Stud)",
-            "visual": "平板, 圓形 2 x 2 帶 圓形ed Bottom (Boat Stud)",
-            "colorId": 11
-          },
-          {
             "id": "85984",
             "name": "斜坡磚 30 1 x 2 x 2/3",
             "visual": "斜坡磚 30 1 x 2 x 2/3",
@@ -1469,18 +1578,6 @@
             "colorId": 0
           },
           {
-            "id": "6575",
-            "name": "Technic Cam",
-            "visual": "Technic Cam",
-            "colorId": 85
-          },
-          {
-            "id": "3713",
-            "name": "Technic Bush",
-            "visual": "Technic Bush",
-            "colorId": 86
-          },
-          {
             "id": "6641",
             "name": "Technic 切換卡扣",
             "visual": "Technic 切換卡扣",
@@ -1499,21 +1596,9 @@
             "colorId": 0
           },
           {
-            "id": "4265c",
-            "name": "Technic Bush 1/2 平滑",
-            "visual": "Technic Bush 1/2 平滑",
-            "colorId": 3
-          },
-          {
             "id": "2739a",
             "name": "Technic, Link 1 x 6 帶out 止擋pers",
             "visual": "Technic, Link 1 x 6 帶out 止擋pers",
-            "colorId": 11
-          },
-          {
-            "id": "3738",
-            "name": "Technic, 平板 2 x 8 帶 7 Holes",
-            "visual": "Technic, 平板 2 x 8 帶 7 Holes",
             "colorId": 11
           },
           {
@@ -1569,6 +1654,42 @@
             "name": "Windscreen 8 x 6 x 2 彎曲 斜坡磚d Sides",
             "visual": "Windscreen 8 x 6 x 2 彎曲 斜坡磚d Sides",
             "colorId": 156
+          },
+          {
+            "id": "92908",
+            "name": "轉向 門式軸, 外殼",
+            "visual": "轉向 門式軸, 外殼",
+            "colorId": 86
+          },
+          {
+            "id": "x346",
+            "name": "生化 1 x 3 齒 帶軸孔 (Bohrok 眼)",
+            "visual": "生化 1 x 3 齒 帶軸孔 (Bohrok 眼)",
+            "colorId": 5
+          },
+          {
+            "id": "92908c01",
+            "name": "轉向 門式軸, 外殼 帶 輪框 主機 3 Pins 圓形 (92908 / 92909)",
+            "visual": "轉向 門式軸, 外殼 帶 輪框 主機 3 Pins 圓形 (92908 / 92909)",
+            "colorId": 86
+          },
+          {
+            "id": "92909",
+            "name": "轉向, 輪框 主機 3 Pins 圓形",
+            "visual": "轉向, 輪框 主機 3 Pins 圓形",
+            "colorId": 85
+          },
+          {
+            "id": "32494",
+            "name": "轉向 萬向接頭",
+            "visual": "轉向 萬向接頭",
+            "colorId": 86
+          },
+          {
+            "id": "24121",
+            "name": "齒輪 Rack 11 x 11 彎曲",
+            "visual": "齒輪 Rack 11 x 11 彎曲",
+            "colorId": 11
           }
         ]
       }

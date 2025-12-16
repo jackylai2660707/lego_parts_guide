@@ -7,6 +7,44 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.password-container {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.password-container h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.password-container .form-group {
+    margin-bottom: 1rem;
+}
+
+.password-container input {
+    max-width: 300px;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }

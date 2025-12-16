@@ -239,6 +239,77 @@
             border-color: var(--accent-color);
             color: var(--accent-color);
         }
+
+        /* Batch Selection Styles */
+        .part-checkbox {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .part-card {
+            position: relative;
+        }
+
+        .part-card.selected {
+            border: 2px solid var(--accent-color);
+            background: rgba(0, 85, 191, 0.1);
+        }
+
+        /* Batch Action Bar */
+        .batch-action-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            display: none;
+            align-items: center;
+            gap: 1rem;
+            z-index: 1000;
+        }
+
+        .batch-action-bar.visible {
+            display: flex;
+        }
+
+        .batch-action-bar button {
+            background: white;
+            color: var(--accent-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .batch-action-bar button:hover {
+            background: #f0f0f0;
+        }
+
+        .batch-action-bar .clear-btn {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        /* Drag Reorder Styles */
+        .nav-btn.dragging {
+            opacity: 0.5;
+        }
+
+        .nav-btn.drag-over {
+            border: 2px dashed var(--accent-color);
+            background: rgba(0, 85, 191, 0.1);
+        }
     </style>
 </head>
 
@@ -259,6 +330,13 @@
 
         <div id="app-container">
             <!-- Content will be injected here by script.js -->
+        </div>
+
+        <!-- Batch Action Bar -->
+        <div id="batch-action-bar" class="batch-action-bar">
+            <span id="batch-count">已選擇 0 個零件</span>
+            <button id="batch-move-btn">批量移動</button>
+            <button id="batch-clear-btn" class="clear-btn">取消選擇</button>
         </div>
 
         <!-- Move Category Modal -->

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>樂高零件分類挑戰</title>
+    <title>樂高零件分類挑戰 🎮</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="game.css">
     <link
@@ -13,16 +13,29 @@
 </head>
 
 <body>
+    <!-- Floating SVG Background -->
+    <div class="floating-shapes" id="floating-shapes">
+        <!-- SVG shapes will be injected by JS -->
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+
     <header>
-        <h1>樂高零件分類挑戰</h1>
-        <div class="subtitle">測試你的零件知識！</div>
+        <h1>🎮 樂高零件分類挑戰</h1>
+        <div class="subtitle">來測試你的零件知識吧！💡</div>
         <a href="index.html" class="back-link">← 回到圖鑑</a>
     </header>
 
     <main class="game-container">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar" style="width: 10%;"></div>
+        </div>
+
         <div class="game-stats">
-            <div class="stat-box">得分: <span id="score">0</span></div>
-            <div class="stat-box">題數: <span id="round">1</span>/10</div>
+            <div class="stat-box">⭐ 得分: <span id="score">0</span></div>
+            <div class="stat-box">🎯 題數: <span id="round">1</span>/10</div>
         </div>
 
         <div id="game-area">
@@ -30,7 +43,7 @@
                 <div id="part-image-container">
                     <!-- Image injected here -->
                 </div>
-                <h2 id="part-name">Loading...</h2>
+                <h2 id="part-name">載入中...</h2>
                 <p id="part-id-display">ID: ...</p>
             </div>
 
@@ -39,18 +52,19 @@
             </div>
 
             <div id="feedback" class="feedback-msg"></div>
-            <button id="next-btn" class="primary-btn" style="display: none;">下一題</button>
+            <button id="next-btn" class="primary-btn" style="display: none;">繼續冒險 🚀</button>
         </div>
 
         <!-- Game Over Modal -->
         <div id="game-over-modal" class="modal">
             <div class="modal-content text-center">
-                <h2>遊戲結束!</h2>
-                <p class="final-score">你的得分: <span id="final-score">0</span> / 100</p>
+                <h2>🎉 遊戲結束!</h2>
+                <div class="stars" id="stars"></div>
+                <p class="final-score"><span id="final-score">0</span> 分</p>
                 <p id="final-message"></p>
-                <button id="restart-btn" class="primary-btn">再玩一次</button>
+                <button id="restart-btn" class="primary-btn">再玩一次 🔄</button>
                 <br><br>
-                <a href="index.html" class="secondary-btn">回到首頁</a>
+                <a href="index.html" class="secondary-btn">回到首頁 🏠</a>
             </div>
         </div>
     </main>

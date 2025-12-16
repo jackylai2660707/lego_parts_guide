@@ -2,108 +2,347 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Floating SVG Background */
+.floating-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.floating-shapes svg {
+    position: absolute;
+    animation: float 8s ease-in-out infinite;
+    opacity: 0.3;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(10deg);
+    }
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Game Stats - Fun Style */
 .game-stats {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: var(--text-color);
 }
 
 .stat-box {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 0.5rem 1.5rem;
-    border-radius: 20px;
-    box-shadow: var(--glass-shadow);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+.stat-box span {
+    font-size: 1.5rem;
+}
+
+/* Part Display - Bouncy */
 .part-display {
     text-align: center;
     margin-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
     padding: 2rem;
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#part-image-container {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
 }
 
 #part-image-container img {
-    max-height: 200px;
+    max-height: 220px;
     object-fit: contain;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+    border-radius: 12px;
 }
 
 #part-name {
     margin: 0.5rem 0;
     color: var(--text-color);
+    font-size: 1.8rem;
 }
 
 #part-id-display {
-    color: #666;
-    font-size: 0.9rem;
+    color: #888;
+    font-size: 1rem;
+    font-family: monospace;
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
 }
 
+/* Rainbow Option Buttons */
 .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
 }
 
 .option-btn {
-    background: white;
-    border: 2px solid var(--card-border);
-    padding: 1rem;
-    border-radius: 12px;
-    font-size: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 1.2rem 1rem;
+    border-radius: 16px;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s;
-    color: var(--text-color);
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.option-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.option-btn:hover::before {
+    left: 100%;
 }
 
 .option-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-color);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
 }
 
+.option-btn:nth-child(2n) {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.option-btn:nth-child(3n) {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.option-btn:nth-child(4n) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    box-shadow: 0 4px 15px rgba(67, 233, 123, 0.3);
+}
+
+.option-btn:nth-child(5n) {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    box-shadow: 0 4px 15px rgba(250, 112, 154, 0.3);
+}
+
+/* Correct/Wrong States */
 .option-btn.correct {
-    background-color: #d4edda;
-    border-color: #28a745;
-    color: #155724;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+    animation: correctPop 0.5s ease;
+}
+
+@keyframes correctPop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .option-btn.wrong {
-    background-color: #f8d7da;
-    border-color: #dc3545;
-    color: #721c24;
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%) !important;
+    animation: shake 0.5s ease;
 }
 
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    60% {
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Feedback Message */
 .feedback-msg {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    min-height: 1.5em;
+    min-height: 2em;
+    padding: 1rem;
+    border-radius: 12px;
 }
 
 .feedback-msg.correct {
-    color: #28a745;
+    color: #11998e;
+    background: rgba(17, 153, 142, 0.1);
 }
 
 .feedback-msg.wrong {
-    color: #dc3545;
+    color: #eb3349;
+    background: rgba(235, 51, 73, 0.1);
 }
 
+/* Next Button */
 #next-btn {
     display: block;
     margin: 2rem auto 0;
-    padding: 0.8rem 3rem;
-    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+    transition: all 0.3s;
 }
 
+#next-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.5);
+}
+
+/* Confetti Container */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    animation: confettiFall 3s ease-out forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Back Link */
 .back-link {
     color: white;
     text-decoration: none;
@@ -111,50 +350,91 @@
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
 }
 
+.back-link:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Styles */
 .text-center {
     text-align: center;
 }
 
 .final-score {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 0;
     font-weight: bold;
-    color: var(--accent-color);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-/* Modal styles reused from admin.css but simplified */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 2rem;
-    border-radius: 12px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    margin: 10% auto;
+    padding: 3rem;
+    border-radius: 24px;
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     position: relative;
-    animation: popIn 0.3s ease;
+    animation: popIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes popIn {
     from {
-        transform: scale(0.8);
+        transform: scale(0.5) rotate(-5deg);
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        transform: scale(1) rotate(0deg);
         opacity: 1;
+    }
+}
+
+/* Stars decoration */
+.stars {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .options-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+
+    .option-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #part-name {
+        font-size: 1.4rem;
+    }
+
+    .stat-box {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
     }
 }

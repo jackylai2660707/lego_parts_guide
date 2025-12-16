@@ -6,6 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let partsData = []; // Will be fetched from API
     let currentCategoryFilter = null; // null means 'All'
+    let selectedParts = []; // For batch selection
+
+    // Update batch action bar UI
+    function updateBatchUI() {
+        const bar = document.getElementById('batch-action-bar');
+        const count = document.getElementById('batch-count');
+        if (selectedParts.length > 0) {
+            bar.classList.add('visible');
+            count.textContent = `已選擇 ${selectedParts.length} 個零件`;
+        } else {
+            bar.classList.remove('visible');
+        }
+    }
+
+    // Toggle part selection
+    function togglePartSelection(partId, checkbox) {
+        const idx = selectedParts.indexOf(partId);
+        if (idx === -1) {
+            selectedParts.push(partId);
+            checkbox.closest('.part-card').classList.add('selected');
+        } else {
+            selectedParts.splice(idx, 1);
+            checkbox.closest('.part-card').classList.remove('selected');
+        }
+        updateBatchUI();
+    }
 
     // --- Fetch Data ---
     fetch('/api/parts')
@@ -64,6 +90,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderNav();
                 renderParts(searchInput.value.toLowerCase());
             };
+
+            // Add drag-drop reorder for admin
+            const adminToken = localStorage.getItem('adminToken');
+            if (adminToken) {
+                btn.draggable = true;
+                btn.dataset.catIndex = partsData.indexOf(category);
+
+                btn.ondragstart = (e) => {
+                    e.dataTransfer.setData('text/plain', btn.dataset.catIndex);
+                    btn.classList.add('dragging');
+                };
+
+                btn.ondragend = () => {
+                    btn.classList.remove('dragging');
+                };
+
+                btn.ondragover = (e) => {
+                    e.preventDefault();
+                    btn.classList.add('drag-over');
+                };
+
+                btn.ondragleave = () => {
+                    btn.classList.remove('drag-over');
+                };
+
+                btn.ondrop = (e) => {
+                    e.preventDefault();
+                    btn.classList.remove('drag-over');
+                    const fromIndex = parseInt(e.dataTransfer.getData('text/plain'));
+                    const toIndex = parseInt(btn.dataset.catIndex);
+
+                    if (fromIndex !== toIndex) {
+                        // Reorder partsData
+                        const [movedItem] = partsData.splice(fromIndex, 1);
+                        partsData.splice(toIndex, 0, movedItem);
+
+                        // Save and re-render
+                        saveData(partsData);
+                        renderNav();
+                        renderParts(searchInput.value.toLowerCase());
+                    }
+                };
+            }
+
             navContainer.appendChild(btn);
         });
 
@@ -299,8 +369,24 @@ document.addEventListener('DOMContentLoaded', () => {
                         card.appendChild(btnContainer);
                     }
 
+                    // Add checkbox for batch selection (admin only)
+                    if (adminToken) {
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+                        checkbox.className = 'part-checkbox';
+                        checkbox.checked = selectedParts.includes(part.id);
+                        checkbox.onclick = (e) => {
+                            e.stopPropagation();
+                            togglePartSelection(part.id, checkbox);
+                        };
+                        card.insertBefore(checkbox, card.firstChild);
+                        if (selectedParts.includes(part.id)) {
+                            card.classList.add('selected');
+                        }
+                    }
+
                     // Prepend image container
-                    card.insertBefore(imgContainer, card.firstChild);
+                    card.insertBefore(imgContainer, card.querySelector('.part-checkbox') ? card.children[1] : card.firstChild);
 
                     grid.appendChild(card);
                 });
@@ -471,6 +557,104 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('儲存發生錯誤！');
             });
     }
+
+    // --- Batch Move Logic ---
+    let isBatchMode = false;
+    const batchMoveBtn = document.getElementById('batch-move-btn');
+    const batchClearBtn = document.getElementById('batch-clear-btn');
+
+    batchMoveBtn.onclick = () => {
+        if (selectedParts.length === 0) return;
+        isBatchMode = true;
+        // Show move modal for batch
+        document.getElementById('move-part-name').textContent = `正在批量移動 ${selectedParts.length} 個零件`;
+
+        // Populate Categories
+        categorySelect.innerHTML = '';
+        partsData.forEach(cat => {
+            const option = document.createElement('option');
+            option.value = cat.id;
+            option.textContent = cat.title;
+            categorySelect.appendChild(option);
+        });
+        populateSubcategories();
+        modal.style.display = 'flex';
+    };
+
+    batchClearBtn.onclick = () => {
+        selectedParts = [];
+        updateBatchUI();
+        renderParts(searchInput.value.toLowerCase());
+    };
+
+    // Extend saveMoveBtn to handle batch
+    const originalSaveMove = saveMoveBtn.onclick;
+    saveMoveBtn.onclick = () => {
+        if (isBatchMode && selectedParts.length > 0) {
+            const newCatId = categorySelect.value;
+            const newSubTitle = subcategorySelect.value;
+            const newCat = partsData.find(c => c.id === newCatId);
+            const newSub = newCat?.subcategories.find(s => s.title === newSubTitle);
+
+            if (!newSub) {
+                alert('請選擇有效的分類');
+                return;
+            }
+
+            let movedCount = 0;
+            selectedParts.forEach(partId => {
+                // Find and remove part
+                for (const cat of partsData) {
+                    for (const sub of cat.subcategories) {
+                        const idx = sub.parts.findIndex(p => p.id === partId);
+                        if (idx !== -1) {
+                            const partObj = sub.parts.splice(idx, 1)[0];
+                            newSub.parts.push(partObj);
+                            movedCount++;
+                            break;
+                        }
+                    }
+                }
+            });
+
+            // Save and update
+            saveData(partsData);
+            selectedParts = [];
+            updateBatchUI();
+            isBatchMode = false;
+            modal.style.display = 'none';
+            alert(`已批量移動 ${movedCount} 個零件至: ${newCat.title} > ${newSub.title}`);
+        } else if (currentMovingPartId) {
+            // Original single move logic
+            const newCatId = categorySelect.value;
+            const newSubTitle = subcategorySelect.value;
+
+            let partObj = null;
+            for (const cat of partsData) {
+                for (const sub of cat.subcategories) {
+                    const idx = sub.parts.findIndex(p => p.id === currentMovingPartId);
+                    if (idx !== -1) {
+                        partObj = sub.parts.splice(idx, 1)[0];
+                        break;
+                    }
+                }
+                if (partObj) break;
+            }
+
+            if (partObj) {
+                const newCat = partsData.find(c => c.id === newCatId);
+                const newSub = newCat.subcategories.find(s => s.title === newSubTitle);
+                if (newSub) {
+                    newSub.parts.push(partObj);
+                    saveData(partsData);
+                    renderParts(searchInput.value.toLowerCase());
+                    modal.style.display = 'none';
+                    alert(`已將零件移動至: ${newCat.title} > ${newSub.title}`);
+                }
+            }
+            currentMovingPartId = null;
+        }
+    };
 
     // --- Edit/Add Part Logic ---
     const editModal = document.getElementById('edit-modal');
