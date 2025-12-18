@@ -213,6 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 categorySection.appendChild(catMgmtDiv);
             }
 
+            let hasVisibleContent = false;
             category.subcategories.forEach((sub, subIndex) => {
                 // Check if subcategory matches filter
                 const subMatches = sub.title.toLowerCase().includes(filterText) ||
@@ -407,10 +408,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Show subcategory if it has content or user is admin
                 if (grid.children.length > 0 || sub.description || adminToken) {
                     categorySection.appendChild(subDiv);
+                    hasVisibleContent = true;
                 }
             });
 
-            if (categorySection.children.length > 2 || adminToken) {
+            if (hasVisibleContent || adminToken) {
                 container.appendChild(categorySection);
             }
         });
